@@ -1,0 +1,144 @@
+{
+  "cases": [
+    {
+      "text": "2 cases of 6ft usb c braided black",
+      "expect": "resolve",
+      "note": "length, style and color all specified"
+    },
+    {
+      "text": "10 tempered glass screen protectors for the 14 pro",
+      "expect": "resolve",
+      "note": "model and type explicit"
+    },
+    {
+      "text": "3 wall chargers 20w usb-c white",
+      "expect": "resolve",
+      "note": "fully specified"
+    },
+    {
+      "text": "a 20000mah power bank",
+      "expect": "resolve_or_ask",
+      "note": "capacity clear, extras vary"
+    },
+    {
+      "text": "5 micro sd 128",
+      "expect": "resolve_or_ask",
+      "note": "class 10 vs plain"
+    },
+    {
+      "text": "send me 2 cases of usb c cables, 3 car chargers and 10 screen protectors for the 15 pro",
+      "expect": "resolve",
+      "note": "three lines, one ambiguous"
+    },
+    {
+      "text": "need:\n- 12 clear cases iphone 14\n- 6 bluetooth earbuds\n- 2 medium speakers",
+      "expect": "resolve",
+      "note": "dash list format"
+    },
+    {
+      "text": "hey, for today: 5 lightning 3ft, 5 lightning 6ft and 3 45w chargers",
+      "expect": "resolve",
+      "note": "greeting plus shorthand"
+    },
+    {
+      "text": "give me 5 usb c cables",
+      "expect": "ask",
+      "note": "length, style and color unspecified"
+    },
+    {
+      "text": "2 cases for the 14",
+      "expect": "ask",
+      "note": "14, 14 pro or 14 pro max"
+    },
+    {
+      "text": "send the galaxy screen protectors",
+      "expect": "ask",
+      "note": "which galaxy model"
+    },
+    {
+      "text": "3 chargers",
+      "expect": "ask",
+      "note": "wall or car, what wattage"
+    },
+    {
+      "text": "10 of the blue ones",
+      "expect": "ask",
+      "note": "colloquial reference with no context"
+    },
+    {
+      "text": "a ring light",
+      "expect": "ask",
+      "note": "10 or 12 inch"
+    },
+    {
+      "text": "put me down for 2 dozen clear cases 15 pro",
+      "expect": "resolve",
+      "note": "dozen as a unit"
+    },
+    {
+      "text": "i need 3 pallets of usb c cables",
+      "expect": "ask",
+      "note": "'pallet' is not a catalog unit"
+    },
+    {
+      "text": "6 of the fast chargers",
+      "expect": "ask",
+      "note": "'fast' is vague"
+    },
+    {
+      "text": "the car charger i got last time",
+      "expect": "ask",
+      "note": "needs order history, not available yet"
+    },
+    {
+      "text": "4 camera lens protectors for the 16 pro",
+      "expect": "resolve",
+      "note": "specific product"
+    },
+    {
+      "text": "5 of those long braided ones",
+      "expect": "ask",
+      "note": "'long' = 6ft or 10ft, type undefined"
+    },
+    {
+      "text": "2 cse of usb-c cabel 6 ft",
+      "expect": "resolve_or_ask",
+      "note": "typos"
+    },
+    {
+      "text": "10 SCREEN PROTECTORS IPHONE 15 PRO GLASS",
+      "expect": "resolve",
+      "note": "all caps"
+    },
+    {
+      "text": "bluetooth earbuds x 6",
+      "expect": "resolve_or_ask",
+      "note": "quantity trailing with x"
+    },
+    {
+      "text": "hey good morning",
+      "expect": "no_lines",
+      "note": "no order, must not invent one"
+    },
+    {
+      "text": "how much is the 6ft usb c cable?",
+      "expect": "no_lines",
+      "note": "price question, not an order"
+    },
+    {
+      "text": "2 cases of bicycles",
+      "expect": "not_found",
+      "note": "product not in catalog"
+    },
+    {
+      "text": "send me a bit of everything",
+      "expect": "ask",
+      "note": "no actionable detail"
+    },
+    {
+      "text": "500 usb c cables 3ft black",
+      "expect": "resolve",
+      "note": "quantity exceeds stock"
+    }
+  ]
+}
