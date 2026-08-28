@@ -22,11 +22,24 @@ export {
   assessSearchClarity,
 } from "@/lib/engine/grouping";
 export { searchCatalog, analyzeSearchResults } from "@/lib/engine/search";
+export { decideLine } from "@/lib/engine/decide";
+export {
+  findDistinguishingAttribute,
+  hasProductChangingOverride,
+  COMPETITIVE_SCORE_RATIO,
+} from "@/lib/engine/group-compare";
+export { recogniseBuyerUnit, BUYER_UNIT_ALIASES } from "@/lib/engine/units";
+export type { ClarificationQuestioner } from "@/lib/engine/questioner";
 export {
   CLEAR_SCORE_RATIO_THRESHOLD,
+  PRODUCT_CHANGING_ATTRIBUTES,
 } from "@/lib/engine/types";
 export type {
+  AvailabilityFlag,
+  ClarificationOption,
   ExtractedAttributes,
+  LineOutcome,
+  ProductChangingAttribute,
   SearchClarity,
   SearchOptions,
   SearchResult,

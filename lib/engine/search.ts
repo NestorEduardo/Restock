@@ -17,8 +17,11 @@ export function searchCatalog(
   const topN = options?.topN ?? 10;
   const idfMap = buildIdfMap(items);
 
-  const rawResults: Array<SearchResult & { attributes: SearchResult["matchedAttributes"] }> =
-    [];
+  const rawResults: Array<
+    Omit<SearchResult, "groupAttributes"> & {
+      attributes: Partial<SearchResult["groupAttributes"]>;
+    }
+  > = [];
 
   for (const item of items) {
     const breakdown = scoreCandidate(query, item.name, idfMap);

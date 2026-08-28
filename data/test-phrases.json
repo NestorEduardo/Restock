@@ -27,7 +27,7 @@
     },
     {
       "text": "send me 2 cases of usb c cables, 3 car chargers and 10 screen protectors for the 15 pro",
-      "expect": "resolve",
+      "expect": "ask",
       "note": "three lines, one ambiguous"
     },
     {
@@ -37,7 +37,7 @@
     },
     {
       "text": "hey, for today: 5 lightning 3ft, 5 lightning 6ft and 3 45w chargers",
-      "expect": "resolve",
+      "expect": "ask",
       "note": "greeting plus shorthand"
     },
     {
@@ -107,8 +107,8 @@
     },
     {
       "text": "10 SCREEN PROTECTORS IPHONE 15 PRO GLASS",
-      "expect": "resolve",
-      "note": "all caps"
+      "expect": "ask",
+      "note": "all caps; 15 vs 15 Pro must clarify"
     },
     {
       "text": "bluetooth earbuds x 6",
@@ -132,7 +132,7 @@
     },
     {
       "text": "send me a bit of everything",
-      "expect": "ask",
+      "expect": "no_lines",
       "note": "no actionable detail"
     },
     {

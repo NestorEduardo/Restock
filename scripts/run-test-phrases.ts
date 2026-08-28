@@ -2,11 +2,8 @@ import { readFileSync } from "fs";
 import path from "path";
 
 import { JsonCatalogSource } from "@/lib/catalog/json-source";
-import {
-  analyzeSearchResults,
-  searchCatalog,
-} from "@/lib/engine/search";
-import { CLEAR_SCORE_RATIO_THRESHOLD } from "@/lib/engine/types";
+import { decideLine } from "@/lib/engine/decide";
+import type { LineOutcome } from "@/lib/engine/types";
 import { FakeLineSplitter } from "@/lib/providers/fake-splitter";
 
 type TestPhrasesJson = {
@@ -17,39 +14,78 @@ type TestPhrasesJson = {
   }>;
 };
 
-function formatRatio(ratio: number | null): string {
-  return ratio === null ? "n/a (single group)" : String(ratio);
-}
+type CaseOutcome = "resolve" | "ask" | "not_found" | "no_lines";
 
-function printSearchResults(description: string, items: Awaited<ReturnType<JsonCatalogSource["listItems"]>>) {
-  const results = searchCatalog(description, items, { topN: 5 });
-  const clarity = analyzeSearchResults(results);
-  const top = results[0];
-  const second = results[1];
+type OutcomeCounts = {
+  RESOLVED: number;
+  NEEDS_CLARIFICATION: number;
+  NOT_FOUND: number;
+};
 
-  if (results.length === 0) {
-    console.log("      results: (none — all scores <= 0)");
-    return;
+function deriveCaseOutcome(
+  lineCount: number,
+  outcomes: LineOutcome[],
+): CaseOutcome {
+  if (lineCount === 0) {
+    return "no_lines";
   }
 
-  const summary = results
-    .map(
-      (result, rank) =>
-        `#${rank + 1} sku=${result.sku} score=${result.score}${result.alternateSkus.length > 0 ? ` +${result.alternateSkus.length}` : ""}`,
-    )
-    .join(" | ");
-  console.log(`      ${summary}`);
-  console.log(
-    `      leader: sku=${top?.sku} score=${top?.score} ratio=${formatRatio(clarity.scoreRatio)}${second ? ` vs #2=${second.score}` : ""}`,
-  );
-  if (clarity.signal === "ambiguous") {
-    console.log("      signal: AMBIGUOUS (tight score cluster across groups)");
-  } else if (clarity.signal === "clear") {
-    console.log("      signal: CLEAR (visible score ratio across groups)");
+  if (outcomes.some((outcome) => outcome.type === "NEEDS_CLARIFICATION")) {
+    return "ask";
+  }
+
+  if (outcomes.some((outcome) => outcome.type === "NOT_FOUND")) {
+    return "not_found";
+  }
+
+  return "resolve";
+}
+
+function expectMatches(actual: CaseOutcome, expect: string): boolean {
+  if (expect === "resolve_or_ask") {
+    return actual === "resolve" || actual === "ask";
+  }
+
+  return actual === expect;
+}
+
+function printOutcome(outcome: LineOutcome, indent: string): void {
+  switch (outcome.type) {
+    case "RESOLVED":
+      console.log(`${indent}outcome: RESOLVED`);
+      console.log(`${indent}  sku=${outcome.sku} name=${JSON.stringify(outcome.name)}`);
+      console.log(
+        `${indent}  price=${outcome.price} quantity=${outcome.quantity} unit=${JSON.stringify(outcome.unit)}`,
+      );
+      console.log(`${indent}  reason: ${outcome.reason}`);
+      console.log(`${indent}  availability: ${outcome.availability}`);
+      console.log(
+        `${indent}  unitRecognised: ${outcome.unitRecognised}${outcome.buyerUnit ? ` (buyer said ${JSON.stringify(outcome.buyerUnit)})` : ""}`,
+      );
+      break;
+    case "NEEDS_CLARIFICATION":
+      console.log(`${indent}outcome: NEEDS_CLARIFICATION`);
+      console.log(`${indent}  question: ${outcome.question}`);
+      console.log(
+        `${indent}  distinguishingAttribute: ${outcome.distinguishingAttribute}`,
+      );
+      for (const option of outcome.options) {
+        console.log(
+          `${indent}  option: ${option.label} (sku=${option.sku})`,
+        );
+      }
+      break;
+    case "NOT_FOUND":
+      console.log(`${indent}outcome: NOT_FOUND`);
+      console.log(
+        `${indent}  description: ${JSON.stringify(outcome.description)}`,
+      );
+      break;
   }
 }
 
 async function main() {
+  const verbose = process.argv.includes("--verbose");
   const catalog = new JsonCatalogSource();
   const items = await catalog.listItems("demo");
   const splitter = new FakeLineSplitter();
@@ -59,13 +95,20 @@ async function main() {
 
   console.log(`Catalog items: ${items.length}`);
   console.log(`Test cases: ${phrases.cases.length}`);
-  console.log(`Clarity threshold: ratio >= ${CLEAR_SCORE_RATIO_THRESHOLD}`);
   console.log("Splitter: FakeLineSplitter (offline)\n");
+
+  const outcomeCounts: OutcomeCounts = {
+    RESOLVED: 0,
+    NEEDS_CLARIFICATION: 0,
+    NOT_FOUND: 0,
+  };
+  const mismatches: Array<{ caseNumber: number; expect: string; actual: CaseOutcome }> =
+    [];
 
   for (const [index, testCase] of phrases.cases.entries()) {
     const caseNumber = index + 1;
 
-    console.log(`--- Case ${caseNumber} [${testCase.expect}] ---`);
+    console.log(`--- Case ${caseNumber} [expect: ${testCase.expect}] ---`);
     console.log(`text: ${JSON.stringify(testCase.text)}`);
     if (testCase.note) {
       console.log(`note: ${testCase.note}`);
@@ -74,56 +117,64 @@ async function main() {
     const lines = await splitter.split(testCase.text);
     console.log(`lines: ${lines.length}`);
 
+    const outcomes: LineOutcome[] = [];
+
     if (lines.length === 0) {
+      const actual = deriveCaseOutcome(0, outcomes);
+      console.log(`case outcome: ${actual}`);
+      if (!expectMatches(actual, testCase.expect)) {
+        mismatches.push({
+          caseNumber,
+          expect: testCase.expect,
+          actual,
+        });
+      }
       console.log("");
       continue;
     }
 
-    lines.forEach((line, lineIndex) => {
+    for (const [lineIndex, line] of lines.entries()) {
       const unitLabel = line.unit === null ? "null" : JSON.stringify(line.unit);
       console.log(
         `  [${lineIndex + 1}] qty=${line.quantity} unit=${unitLabel} desc=${JSON.stringify(line.description)}`,
       );
       console.log(`      raw: ${JSON.stringify(line.raw)}`);
-      printSearchResults(line.description, items);
-    });
+
+      const outcome = decideLine(line, items);
+      outcomes.push(outcome);
+      outcomeCounts[outcome.type] += 1;
+      printOutcome(outcome, "      ");
+    }
+
+    const actual = deriveCaseOutcome(lines.length, outcomes);
+    console.log(`case outcome: ${actual}`);
+    if (!expectMatches(actual, testCase.expect)) {
+      mismatches.push({ caseNumber, expect: testCase.expect, actual });
+    }
 
     console.log("");
   }
 
-  const acceptanceQueries = [
-    "usb c cable 6ft braided black",
-    "usb c cables",
-    "CBL USB-C 6FT BRD WHT",
-    "bicycles",
-    "10 tempered glass screen protectors for the 14 pro",
-    "10 SCREEN PROTECTORS IPHONE 15 PRO GLASS",
-    "3 chargers",
-    "2 cases for the 14",
-    "500 usb c cables 3ft black",
-  ];
+  console.log("=== Summary ===");
+  console.log(`RESOLVED lines: ${outcomeCounts.RESOLVED}`);
+  console.log(
+    `NEEDS_CLARIFICATION lines: ${outcomeCounts.NEEDS_CLARIFICATION}`,
+  );
+  console.log(`NOT_FOUND lines: ${outcomeCounts.NOT_FOUND}`);
 
-  console.log("=== Acceptance spot-checks ===");
-  for (const query of acceptanceQueries) {
-    const results = searchCatalog(query, items, { topN: 5 });
-    const clarity = analyzeSearchResults(results);
-    console.log(`\nquery: ${JSON.stringify(query)}`);
-    if (results.length === 0) {
-      console.log("  (no results)");
-      continue;
-    }
-    for (const result of results.slice(0, 5)) {
-      const alternates =
-        result.alternateSkus.length > 0
-          ? ` (+${result.alternateSkus.length} dupes)`
-          : "";
+  if (mismatches.length === 0) {
+    console.log("All cases match expect.");
+  } else {
+    console.log(`Mismatches (${mismatches.length}):`);
+    for (const mismatch of mismatches) {
       console.log(
-        `  ${result.sku} score=${result.score}${alternates} — ${result.name}`,
+        `  Case ${mismatch.caseNumber}: expect=${mismatch.expect}, actual=${mismatch.actual}`,
       );
     }
-    console.log(
-      `  signal: ${clarity.signal.toUpperCase()} ratio=${formatRatio(clarity.scoreRatio)}`,
-    );
+  }
+
+  if (verbose) {
+    console.log("\n(--verbose: raw search output omitted; use decideLine outcomes above)");
   }
 }
 

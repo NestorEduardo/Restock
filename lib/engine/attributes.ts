@@ -26,6 +26,7 @@ const WATTAGE_PATTERN = /\b(\d+)w\b/;
 const CAPACITY_GB_PATTERN = /\b(\d+)\s*gb\b/;
 const CAPACITY_MAH_PATTERN = /\b(\d+)\s*mah\b/;
 const LENGTH_PATTERN = /\b(\d+ft)\b/;
+const SIZE_INCH_PATTERN = /\b(\d+)\s*inch\b/;
 
 function firstMatch(text: string, pattern: RegExp): string | undefined {
   const match = text.match(pattern);
@@ -52,9 +53,18 @@ export function extractAttributes(text: string): Partial<ExtractedAttributes> {
     }
   }
 
+  if (attributes.connector && !attributes.productType) {
+    attributes.productType = "cable";
+  }
+
   const length = firstMatch(normalized, LENGTH_PATTERN);
   if (length) {
     attributes.length = length;
+  }
+
+  const sizeInch = firstMatch(normalized, SIZE_INCH_PATTERN);
+  if (sizeInch) {
+    attributes.size = `${sizeInch} inch`;
   }
 
   const color = firstMatch(normalized, COLOR_PATTERN);
