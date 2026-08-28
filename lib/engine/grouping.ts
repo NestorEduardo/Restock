@@ -15,6 +15,9 @@ export function buildGroupSignature(
   if (attributes.length) {
     parts.push(`length:${attributes.length}`);
   }
+  if (attributes.size) {
+    parts.push(`size:${attributes.size}`);
+  }
   if (attributes.color) {
     parts.push(`color:${attributes.color}`);
   }
@@ -31,15 +34,12 @@ export function buildGroupSignature(
   return parts.length > 0 ? parts.join("|") : "unknown";
 }
 
-type RawSearchResult = SearchResult & {
+type RawSearchResult = Omit<SearchResult, "groupAttributes"> & {
   attributes: Partial<ExtractedAttributes>;
 };
 
 export function groupSearchResults(results: RawSearchResult[]): SearchResult[] {
-  const groups = new Map<
-    string,
-    SearchResult & { attributes: Partial<ExtractedAttributes> }
-  >();
+  const groups = new Map<string, RawSearchResult & { groupKey: string }>();
 
   for (const result of results) {
     const groupKey = buildGroupSignature(result.attributes);
@@ -71,10 +71,10 @@ export function groupSearchResults(results: RawSearchResult[]): SearchResult[] {
       }
       return left.name.localeCompare(right.name);
     })
-    .map(({ attributes, ...result }) => {
-      void attributes;
-      return result;
-    });
+    .map(({ attributes, ...result }) => ({
+      ...result,
+      groupAttributes: attributes,
+    }));
 }
 
 export function assessSearchClarity(results: SearchResult[]): SearchClarity {

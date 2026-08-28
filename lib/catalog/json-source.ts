@@ -8,6 +8,9 @@ type CatalogJson = {
   products: Array<{
     sku: string;
     name: string;
+    price: number;
+    stock: number;
+    unit: string;
   }>;
 };
 
@@ -27,6 +30,9 @@ export class JsonCatalogSource implements CatalogSource {
       tenantId,
       id: product.sku,
       name: product.name,
+      price: product.price,
+      stock: product.stock,
+      unit: product.unit,
     }));
 
     return this.cachedItems;
