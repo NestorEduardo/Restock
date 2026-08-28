@@ -83,7 +83,7 @@ export function assessSearchClarity(results: SearchResult[]): SearchClarity {
   }
 
   if (results.length === 1) {
-    return { signal: "clear", scoreRatio: Number.POSITIVE_INFINITY };
+    return { signal: "clear", scoreRatio: null };
   }
 
   const topScore = results[0].score;
