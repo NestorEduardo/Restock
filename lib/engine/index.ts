@@ -31,6 +31,7 @@ export type {
   SearchOptions,
   SearchResult,
 } from "@/lib/engine/types";
+export type { LineSplitter, SplitLine } from "@/lib/engine/split";
 
 export function resolveOrder(
   tenantId: string,

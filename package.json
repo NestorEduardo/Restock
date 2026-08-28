@@ -7,10 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "search:test": "tsx scripts/run-test-phrases.ts"
+    "search:test": "tsx scripts/run-test-phrases.ts",
+    "split:test": "tsx scripts/run-split-test.ts"
   },
   "dependencies": {
     "next": "16.3.3",
+    "openai": "^4.104.0",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },

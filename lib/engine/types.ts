@@ -22,7 +22,8 @@ export type SearchResult = {
 
 export type SearchClarity = {
   signal: "clear" | "ambiguous" | "none";
-  scoreRatio: number;
+  /** Top-vs-second score ratio; null when only one group matched (no competitor to compare). */
+  scoreRatio: number | null;
 };
 
 export type SearchOptions = {
