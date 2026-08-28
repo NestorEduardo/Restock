@@ -1,0 +1,2194 @@
+{
+  "distributor": "Demo Distributors",
+  "currency": "USD",
+  "updated": "2026-08-28",
+  "products": [
+    {
+      "sku": "CH083",
+      "name": "Wall charger 45W USB-C port white Awei",
+      "category": "chargers",
+      "unit": "BLISTER",
+      "price": 9.5,
+      "stock": 12,
+      "variant_group": "wall-charger-45W"
+    },
+    {
+      "sku": "A-243",
+      "name": "CASE IPHONE 13 PRO CLR",
+      "category": "cases",
+      "unit": "CS/24",
+      "price": 6.5,
+      "stock": 0,
+      "variant_group": "case-iphone-13-pro-clear"
+    },
+    {
+      "sku": "A-12",
+      "name": "CBL USB-C 6FT HEAVY DUTY BLUE GENERIC",
+      "category": "cables",
+      "unit": "CS/24",
+      "price": 3.0,
+      "stock": 40,
+      "variant_group": "cable-usb-c-6ft-heavy duty"
+    },
+    {
+      "sku": "A-90",
+      "name": "Wall charger 65W USB-C port black Ldnio",
+      "category": "chargers",
+      "unit": "EA",
+      "price": 8.32,
+      "stock": 3,
+      "variant_group": "wall-charger-65W"
+    },
+    {
+      "sku": "CAB-0037",
+      "name": "CBL LIGHTNING 10FT BRD RED GENERIC ",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.89,
+      "stock": 120,
+      "variant_group": "cable-lightning-10ft-braided"
+    },
+    {
+      "sku": "CH237",
+      "name": "wall  charger 12w dual usb port white premium",
+      "category": "chargers",
+      "unit": "EA",
+      "price": 9.31,
+      "stock": 120,
+      "variant_group": "wall-charger-12W"
+    },
+    {
+      "sku": "ST206",
+      "name": "micro sd class 10 64gb",
+      "category": "storage",
+      "unit": "EA",
+      "price": 9.6,
+      "stock": 0,
+      "variant_group": "storage-64GB"
+    },
+    {
+      "sku": "CH097",
+      "name": "Car charger 36W dual port",
+      "category": "chargers",
+      "unit": "CS/12",
+      "price": 6.0,
+      "stock": 60,
+      "variant_group": "car-charger-36W"
+    },
+    {
+      "sku": "CHA-0059",
+      "name": "Wall charger 5W single USB port white Premium",
+      "category": "chargers",
+      "unit": "EA",
+      "price": 8.0,
+      "stock": 120,
+      "variant_group": "wall-charger-5W"
+    },
+    {
+      "sku": "CA014",
+      "name": "Cable USB-C 10ft braided black Ldnio",
+      "category": "cables",
+      "unit": "PK/6",
+      "price": 3.5,
+      "stock": 40,
+      "variant_group": "cable-usb-c-10ft-braided"
+    },
+    {
+      "sku": "ST207",
+      "name": "micro sd 128gb",
+      "category": "storage",
+      "unit": "BLISTER",
+      "price": 11.52,
+      "stock": 120,
+      "variant_group": "storage-128GB"
+    },
+    {
+      "sku": "AC211",
+      "name": "3.5mm  To Usb-c Adapter",
+      "category": "accessories",
+      "unit": "DOZ",
+      "price": 7.66,
+      "stock": 40,
+      "variant_group": "adapter-3.5mm"
+    },
+    {
+      "sku": "CHAR.082",
+      "name": "Wall Charger 45w Dual Usb Port Black Ldnio",
+      "category": "chargers",
+      "unit": "EA",
+      "price": 10.0,
+      "stock": 120,
+      "variant_group": "wall-charger-45W"
+    },
+    {
+      "sku": "AU191",
+      "name": "Speaker Mini Bluetooth With Lights",
+      "category": "audio",
+      "unit": "CS/12",
+      "price": 31.0,
+      "stock": 0,
+      "variant_group": "speaker-mini"
+    },
+    {
+      "sku": "A-72",
+      "name": "Wall charger 20W single USB port white",
+      "category": "chargers",
+      "unit": "EA",
+      "price": 7.37,
+      "stock": 0,
+      "variant_group": "wall-charger-20W"
+    },
+    {
+      "sku": "10235",
+      "name": "WALL CHARGER 65W SINGLE USB PORT WHITE",
+      "category": "chargers",
+      "unit": "PK/6",
+      "price": 6.54,
+      "stock": 0,
+      "variant_group": "wall-charger-65W"
+    },
+    {
+      "sku": "POW-0180",
+      "name": "POWER BANK 5000MAH FAST CHARGE",
+      "category": "power",
+      "unit": "BLISTER",
+      "price": 19.78,
+      "stock": 200,
+      "variant_group": "powerbank-5000mAh"
+    },
+    {
+      "sku": "A-234",
+      "name": "erbds  bluetooth erbds blk hoco",
+      "category": "audio",
+      "unit": "EA",
+      "price": 14.18,
+      "stock": 25,
+      "variant_group": "audio-bluetooth"
+    },
+    {
+      "sku": "SCRE.165",
+      "name": "SCRN PROT GALAXY A55 HYDROGEL",
+      "category": "screen",
+      "unit": "PK/6",
+      "price": 2.33,
+      "stock": 0,
+      "variant_group": "screen-galaxy-a55-hydrogel"
+    },
+    {
+      "sku": "A-122",
+      "name": "CASE IPHONE 16 PRO SILICONE PINK",
+      "category": "cases",
+      "unit": "EA",
+      "price": 6.0,
+      "stock": 8,
+      "variant_group": "case-iphone-16-pro-silicone"
+    },
+    {
+      "sku": "AUD-0195",
+      "name": "SPEAKER MEDIUM WATERPROOF BLUETOOTH",
+      "category": "audio",
+      "unit": "PK/6",
+      "price": 30.5,
+      "stock": 40,
+      "variant_group": "speaker-medium"
+    },
+    {
+      "sku": "PO182",
+      "name": "power bank 10000mah with display",
+      "category": "power",
+      "unit": "CS/12",
+      "price": 23.33,
+      "stock": 200,
+      "variant_group": "powerbank-10000mAh"
+    },
+    {
+      "sku": "10119",
+      "name": "Case Iphone 16 Rugged Pink",
+      "category": "cases",
+      "unit": "EA",
+      "price": 5.37,
+      "stock": 12,
+      "variant_group": "case-iphone-16-rugged"
+    },
+    {
+      "sku": "AUD-0175",
+      "name": "earbuds bluetooth earbuds white",
+      "category": "audio",
+      "unit": "CS/24",
+      "price": 17.51,
+      "stock": 25,
+      "variant_group": "audio-bluetooth"
+    },
+    {
+      "sku": "CABL.023",
+      "name": "CBL LIGHTNING 3FT STNDARD BLUE",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.5,
+      "stock": 60,
+      "variant_group": "cable-lightning-3ft-standard"
+    },
+    {
+      "sku": "AC227",
+      "name": "CAMERA LENS PROTECTOR IPHONE 16 PRO",
+      "category": "accessories",
+      "unit": "BLISTER",
+      "price": 3.5,
+      "stock": 8,
+      "variant_group": "camera-lens-protector"
+    },
+    {
+      "sku": "A-228",
+      "name": "Wireless charger 15W",
+      "category": "accessories",
+      "unit": "PK/6",
+      "price": 15.56,
+      "stock": 120,
+      "variant_group": "wireless-charger"
+    },
+    {
+      "sku": "A-161",
+      "name": "Screen protector Galaxy A25 tempered glass",
+      "category": "screen",
+      "unit": "CS/24",
+      "price": 3.0,
+      "stock": 120,
+      "variant_group": "screen-galaxy-a25-tempered glass"
+    },
+    {
+      "sku": "A-169",
+      "name": "Screen Protector Galaxy S24 Hydrogel",
+      "category": "screen",
+      "unit": "CS/24",
+      "price": 2.5,
+      "stock": 0,
+      "variant_group": "screen-galaxy-s24-hydrogel"
+    },
+    {
+      "sku": "AUDI.242",
+      "name": "Speaker medium bluetooth with lights",
+      "category": "audio",
+      "unit": "EA",
+      "price": 36.65,
+      "stock": 200,
+      "variant_group": "speaker-medium"
+    },
+    {
+      "sku": "CH236",
+      "name": "Wall  Charger 12w Single Usb Port White Awei",
+      "category": "chargers",
+      "unit": "EA",
+      "price": 7.0,
+      "stock": 40,
+      "variant_group": "wall-charger-12W"
+    },
+    {
+      "sku": "A-110",
+      "name": " Case iPhone 14 Pro Max leather black",
+      "category": "cases",
+      "unit": "BLISTER",
+      "price": 5.99,
+      "stock": 25,
+      "variant_group": "case-iphone-14-pro-max-leather"
+    },
+    {
+      "sku": "A-176",
+      "name": "headphones  bluetooth over ear black generic",
+      "category": "audio",
+      "unit": "DOZ",
+      "price": 14.16,
+      "stock": 40,
+      "variant_group": "audio-bluetooth"
+    },
+    {
+      "sku": "CHA-0076",
+      "name": "WALL CHARGER 30W SINGLE USB PORT WHITE REMAX ",
+      "category": "chargers",
+      "unit": "DOZ",
+      "price": 8.5,
+      "stock": 0,
+      "variant_group": "wall-charger-30W"
+    },
+    {
+      "sku": "CA136",
+      "name": "CASE GALAXY S24 SILICONE BLACK",
+      "category": "cases",
+      "unit": "EA",
+      "price": 6.5,
+      "stock": 0,
+      "variant_group": "case-galaxy-s24-silicone"
+    },
+    {
+      "sku": "10003",
+      "name": "CABLE USB-C 3FT STANDARD BLUE HOCO",
+      "category": "cables",
+      "unit": "DOZ",
+      "price": 3.73,
+      "stock": 25,
+      "variant_group": "cable-usb-c-3ft-standard"
+    },
+    {
+      "sku": "A-126",
+      "name": "case galaxy a15 clear",
+      "category": "cases",
+      "unit": "EA",
+      "price": 6.29,
+      "stock": 60,
+      "variant_group": "case-galaxy-a15-clear"
+    },
+    {
+      "sku": "ACC-0222",
+      "name": "Ring light 10 inch",
+      "category": "accessories",
+      "unit": "EA",
+      "price": 23.5,
+      "stock": 3,
+      "variant_group": "ring-light"
+    },
+    {
+      "sku": "AUDI.194",
+      "name": "Speaker medium bluetooth with lights",
+      "category": "audio",
+      "unit": "EA",
+      "price": 31.5,
+      "stock": 200,
+      "variant_group": "speaker-medium"
+    },
+    {
+      "sku": "10101",
+      "name": "CASE IPHONE 13 PRO CLR",
+      "category": "cases",
+      "unit": "CS/24",
+      "price": 6.43,
+      "stock": 0,
+      "variant_group": "case-iphone-13-pro-clear"
+    },
+    {
+      "sku": "A-120",
+      "name": "case iphone 16 with ring stand",
+      "category": "cases",
+      "unit": "CS/12",
+      "price": 5.5,
+      "stock": 60,
+      "variant_group": "case-iphone-16-with ring stand"
+    },
+    {
+      "sku": "POW-0219",
+      "name": "REPLACEMENT BATT IPHONE 15",
+      "category": "power",
+      "unit": "EA",
+      "price": 19.5,
+      "stock": 0,
+      "variant_group": "battery-iphone-15"
+    },
+    {
+      "sku": "ACCE.223",
+      "name": "ring light 12 inch",
+      "category": "accessories",
+      "unit": "BLISTER",
+      "price": 37.46,
+      "stock": 0,
+      "variant_group": "ring-light"
+    },
+    {
+      "sku": "10009",
+      "name": "Cable Usb-c 6ft Braided Black Premium",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.5,
+      "stock": 8,
+      "variant_group": "cable-usb-c-6ft-braided"
+    },
+    {
+      "sku": "CABL.045",
+      "name": "Cable Micro USB 3ft braided black Awei",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.21,
+      "stock": 0,
+      "variant_group": "cable-micro usb-3ft-braided"
+    },
+    {
+      "sku": "CASE.129",
+      "name": "CASE GALAXY A15 WITH RING STAND BLUE",
+      "category": "cases",
+      "unit": "CS/24",
+      "price": 6.0,
+      "stock": 60,
+      "variant_group": "case-galaxy-a15-with ring stand"
+    },
+    {
+      "sku": "ACC-0209",
+      "name": "Usb-c Otg Adapter",
+      "category": "accessories",
+      "unit": "EA",
+      "price": 7.5,
+      "stock": 8,
+      "variant_group": "adapter-USB-C"
+    },
+    {
+      "sku": "A-52",
+      "name": "Cable Micro USB 6ft heavy duty white Premium",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.0,
+      "stock": 0,
+      "variant_group": "cable-micro usb-6ft-heavy duty"
+    },
+    {
+      "sku": "10086",
+      "name": "WL  CHGR 65W SINGLE USB PRT BLK REMAX",
+      "category": "chargers",
+      "unit": "EA",
+      "price": 9.57,
+      "stock": 0,
+      "variant_group": "wall-charger-65W"
+    },
+    {
+      "sku": "10108",
+      "name": "Case iPhone 14 Pro silicone",
+      "category": "cases",
+      "unit": "DOZ",
+      "price": 6.68,
+      "stock": 120,
+      "variant_group": "case-iphone-14-pro-silicone"
+    },
+    {
+      "sku": "A-168",
+      "name": "SCRN PROT GALAXY S24 CERAMIC",
+      "category": "screen",
+      "unit": "EA",
+      "price": 2.86,
+      "stock": 40,
+      "variant_group": "screen-galaxy-s24-ceramic"
+    },
+    {
+      "sku": "CA016",
+      "name": "Cable USB-C 10ft braided red Remax",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.0,
+      "stock": 200,
+      "variant_group": "cable-usb-c-10ft-braided"
+    },
+    {
+      "sku": "10028",
+      "name": "Cable Lightning 6ft standard black Awei",
+      "category": "cables",
+      "unit": "PK/6",
+      "price": 2.89,
+      "stock": 40,
+      "variant_group": "cable-lightning-6ft-standard"
+    },
+    {
+      "sku": "SCR-0239",
+      "name": "SCRN  PROT IPHONE 14 PRO MAX CERAMIC",
+      "category": "screen",
+      "unit": "EA",
+      "price": 3.39,
+      "stock": 0,
+      "variant_group": "screen-iphone-14-pro-max-ceramic"
+    },
+    {
+      "sku": "CA029",
+      "name": "Cable Lightning 6ft standard red Ldnio",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.5,
+      "stock": 0,
+      "variant_group": "cable-lightning-6ft-standard"
+    },
+    {
+      "sku": "10188",
+      "name": "Power Bank 30000mah Fast Charge",
+      "category": "power",
+      "unit": "EA",
+      "price": 22.43,
+      "stock": 3,
+      "variant_group": "powerbank-30000mAh"
+    },
+    {
+      "sku": "AUD-0196",
+      "name": "SPEAKER LARGE BLUETOOTH",
+      "category": "audio",
+      "unit": "CS/12",
+      "price": 22.5,
+      "stock": 3,
+      "variant_group": "speaker-large"
+    },
+    {
+      "sku": "A-30",
+      "name": "Cable Lightning 6ft Standard Blue Baseus",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.5,
+      "stock": 40,
+      "variant_group": "cable-lightning-6ft-standard"
+    },
+    {
+      "sku": "ACC-0224",
+      "name": "Tripod Tabletop",
+      "category": "accessories",
+      "unit": "BLISTER",
+      "price": 10.28,
+      "stock": 3,
+      "variant_group": "tripod"
+    },
+    {
+      "sku": "AUDI.190",
+      "name": "speaker mini bluetooth ",
+      "category": "audio",
+      "unit": "DOZ",
+      "price": 25.12,
+      "stock": 8,
+      "variant_group": "speaker-mini"
+    },
+    {
+      "sku": "STO-0205",
+      "name": "MICRO SD 64GB",
+      "category": "storage",
+      "unit": "EA",
+      "price": 12.5,
+      "stock": 120,
+      "variant_group": "storage-64GB"
+    },
+    {
+      "sku": "AUDI.170",
+      "name": "ERBDS WIRED 3.5MM BLK PREMIUM ",
+      "category": "audio",
+      "unit": "CS/24",
+      "price": 17.49,
+      "stock": 40,
+      "variant_group": "audio-wired"
+    },
+    {
+      "sku": "10160",
+      "name": "screen protector galaxy a15 hydrogel",
+      "category": "screen",
+      "unit": "CS/24",
+      "price": 3.03,
+      "stock": 200,
+      "variant_group": "screen-galaxy-a15-hydrogel"
+    },
+    {
+      "sku": "A-53",
+      "name": "Cable Micro Usb 6ft Heavy Duty Red Premium",
+      "category": "cables",
+      "unit": "BLISTER",
+      "price": 2.5,
+      "stock": 0,
+      "variant_group": "cable-micro usb-6ft-heavy duty"
+    },
+    {
+      "sku": "A-216",
+      "name": "Replacement battery iPhone 14",
+      "category": "power",
+      "unit": "EA",
+      "price": 16.5,
+      "stock": 0,
+      "variant_group": "battery-iphone-14"
+    },
+    {
+      "sku": "10107",
+      "name": "case iphone 14 pro clear",
+      "category": "cases",
+      "unit": "DOZ",
+      "price": 6.0,
+      "stock": 120,
+      "variant_group": "case-iphone-14-pro-clear"
+    },
+    {
+      "sku": "CAB-0047",
+      "name": " Cable Micro USB 3ft braided red Generic",
+      "category": "cables",
+      "unit": "EA",
+      "price": 2.5,
+      "stock": 12,
+      "variant_group": "cable-micro usb-3ft-braided"
+    },
+    {
+      "sku": "AU177",
+      "name": " HEADPHONES BLUETOOTH OVER EAR WHITE PREMIUM",
+      "category": "audio",
+      "unit": "BLISTER",
+      "price": 14.63,
+      "stock": 3,
+      "variant_group": "audio-bluetooth"
+    },
+    {
+      "sku": "A-215",
+      "name": "replacement battery iphone 13 pro",
+      "category": "power",
+      "unit": "CS/12",
+      "price": 17.12,
+      "stock": 40,
+      "variant_group": "battery-iphone-13-pro"
+    },
+    {
+      "sku": "A-56",
+      "name": "CABLE MICRO USB 10FT BRAIDED WHITE",
+      "category": "cables",
+      "unit": "CS/12",
+      "price": 2.5,
+      "stock": 12,
+      "variant_group": "cable-micro usb-10ft-braided"
+    },
+    {
+      "sku": "A-66",
+      "name": "wall charger 12w dual usb port black remax ",
+      "category": "chargers",
+      "unit": "PK/6",
+      "price": 8.0,
+      "stock": 120,
+      "variant_group": "wall-charger-12W"
+    },
+    {
+      "sku": "CAB-0041",
+      "name": "Cable Lightning 10ft Heavy Duty Blue Hoco",
+      "category": "cables",
+      "unit": "DOZ",
+      "price": 3.41,
+      "stock": 12,
+      "variant_group": "cable-lightning-10ft-heavy duty"
+    },
+    {
+      "sku": "SCRE.167",
+      "name": "Screen protector Galaxy S24 privacy",
+      "category": "screen",
+      "unit": "EA",
+      "price": 3.0,
+      "stock": 60,
+      "variant_group": "screen-galaxy-s24-privacy"
+    },
+    {
+      "sku": "A-143",
+      "name": "Screen Protector Iphone 14 Pro Tempered Glass",
+      "category": "screen",
+      "unit": "PK/6",
+      "price": 3.0,
+      "stock": 40,
+      "variant_group": "screen-iphone-14-pro-tempered glass"
+    },
+    {
+      "sku": "A-193",
+      "name": "Speaker medium bluetooth",
+      "category": "audio",
+      "unit": "PK/6",
+      "price": 32.5,
+      "stock": 40,
+      "variant_group": "speaker-medium"
+    },
+    {
+      "sku": "CABL.055",
+      "name": "Cable Micro Usb 10ft Braided Black Remax ",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.8,
+      "stock": 60,
+      "variant_group": "cable-micro usb-10ft-braided"
+    },
+    {
+      "sku": "CAS-0116",
+      "name": "CASE IPHONE 15 PRO RUGGED BLUE",
+      "category": "cases",
+      "unit": "CS/12",
+      "price": 6.0,
+      "stock": 0,
+      "variant_group": "case-iphone-15-pro-rugged"
+    },
+    {
+      "sku": "SCR-0164",
+      "name": "screen protector galaxy a55 privacy",
+      "category": "screen",
+      "unit": "EA",
+      "price": 2.83,
+      "stock": 25,
+      "variant_group": "screen-galaxy-a55-privacy"
+    },
+    {
+      "sku": "A-94",
+      "name": "Car charger 12W USB-C plus USB",
+      "category": "chargers",
+      "unit": "DOZ",
+      "price": 7.5,
+      "stock": 40,
+      "variant_group": "car-charger-12W"
+    },
+    {
+      "sku": "SC154",
+      "name": "SCREEN PROTECTOR IPHONE 15 PRO HYDROGEL ",
+      "category": "screen",
+      "unit": "EA",
+      "price": 3.09,
+      "stock": 0,
+      "variant_group": "screen-iphone-15-pro-hydrogel"
+    },
+    {
+      "sku": "CA046",
+      "name": "Cable Micro Usb 3ft Braided White",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.17,
+      "stock": 40,
+      "variant_group": "cable-micro usb-3ft-braided"
+    },
+    {
+      "sku": "CABL.010",
+      "name": "CBL USB-C 6FT BRD WHT REMAX",
+      "category": "cables",
+      "unit": "DOZ",
+      "price": 3.91,
+      "stock": 12,
+      "variant_group": "cable-usb-c-6ft-braided"
+    },
+    {
+      "sku": "SCRE.145",
+      "name": "SCREEN PROTECTOR IPHONE 14 PRO MAX TEMPERED GLASS",
+      "category": "screen",
+      "unit": "EA",
+      "price": 2.55,
+      "stock": 120,
+      "variant_group": "screen-iphone-14-pro-max-tempered glass"
+    },
+    {
+      "sku": "CHAR.077",
+      "name": "WALL CHARGER 30W DUAL USB PORT BLACK AWEI",
+      "category": "chargers",
+      "unit": "EA",
+      "price": 8.5,
+      "stock": 12,
+      "variant_group": "wall-charger-30W"
+    },
+    {
+      "sku": "A-20",
+      "name": " Cable USB-C 10ft heavy duty red Remax",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.5,
+      "stock": 120,
+      "variant_group": "cable-usb-c-10ft-heavy duty"
+    },
+    {
+      "sku": "AUDI.172",
+      "name": "ERBDS WIRED USB-C BLK PREMIUM",
+      "category": "audio",
+      "unit": "EA",
+      "price": 17.0,
+      "stock": 12,
+      "variant_group": "audio-wired"
+    },
+    {
+      "sku": "CABL.043",
+      "name": "cable micro usb 3ft standard red hoco",
+      "category": "cables",
+      "unit": "PK/6",
+      "price": 3.5,
+      "stock": 8,
+      "variant_group": "cable-micro usb-3ft-standard"
+    },
+    {
+      "sku": "POW-0189",
+      "name": "Power Bank 30000mah Solar",
+      "category": "power",
+      "unit": "EA",
+      "price": 24.0,
+      "stock": 3,
+      "variant_group": "powerbank-30000mAh"
+    },
+    {
+      "sku": "CHAR.074",
+      "name": "WALL CHARGER 20W DUAL USB PORT WHITE REMAX",
+      "category": "chargers",
+      "unit": "EA",
+      "price": 9.0,
+      "stock": 120,
+      "variant_group": "wall-charger-20W"
+    },
+    {
+      "sku": "A-32",
+      "name": "Cable Lightning 6ft Heavy Duty White Remax",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.97,
+      "stock": 8,
+      "variant_group": "cable-lightning-6ft-heavy duty"
+    },
+    {
+      "sku": "10044",
+      "name": "Cable  Micro Usb 3ft Standard Blue",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.0,
+      "stock": 120,
+      "variant_group": "cable-micro usb-3ft-standard"
+    },
+    {
+      "sku": "A-117",
+      "name": "CASE IPHONE 16 CLEAR",
+      "category": "cases",
+      "unit": "PK/6",
+      "price": 5.0,
+      "stock": 120,
+      "variant_group": "case-iphone-16-clear"
+    },
+    {
+      "sku": "CA008",
+      "name": "Cable USB-C 6ft standard black Baseus",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.12,
+      "stock": 200,
+      "variant_group": "cable-usb-c-6ft-standard"
+    },
+    {
+      "sku": "STO-0204",
+      "name": "USB FLASH DRIVE 32GB",
+      "category": "storage",
+      "unit": "EA",
+      "price": 9.0,
+      "stock": 120,
+      "variant_group": "storage-32GB"
+    },
+    {
+      "sku": "CH089",
+      "name": "WALL CHARGER 65W DUAL USB PORT WHITE HOCO",
+      "category": "chargers",
+      "unit": "CS/24",
+      "price": 8.99,
+      "stock": 3,
+      "variant_group": "wall-charger-65W"
+    },
+    {
+      "sku": "CAS-0113",
+      "name": "CASE IPHONE 15 WITH RING STND",
+      "category": "cases",
+      "unit": "DOZ",
+      "price": 6.44,
+      "stock": 60,
+      "variant_group": "case-iphone-15-with ring stand"
+    },
+    {
+      "sku": "A-134",
+      "name": "Case Galaxy A55 leather black",
+      "category": "cases",
+      "unit": "CS/24",
+      "price": 7.0,
+      "stock": 0,
+      "variant_group": "case-galaxy-a55-leather"
+    },
+    {
+      "sku": "POWE.184",
+      "name": "POWER BANK 20000MAH",
+      "category": "power",
+      "unit": "PK/6",
+      "price": 21.89,
+      "stock": 60,
+      "variant_group": "powerbank-20000mAh"
+    },
+    {
+      "sku": "ACC-0229",
+      "name": "Wireless charger magnetic",
+      "category": "accessories",
+      "unit": "DOZ",
+      "price": 21.0,
+      "stock": 12,
+      "variant_group": "wireless-charger"
+    },
+    {
+      "sku": "CAB-0015",
+      "name": "CBL USB-C 10FT BRD WHT AWEI",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.0,
+      "stock": 120,
+      "variant_group": "cable-usb-c-10ft-braided"
+    },
+    {
+      "sku": "AU178",
+      "name": "Earbuds sport bluetooth black Remax",
+      "category": "audio",
+      "unit": "EA",
+      "price": 13.44,
+      "stock": 3,
+      "variant_group": "audio-sport"
+    },
+    {
+      "sku": "CASE.106",
+      "name": "case iphone 14 with ring stand pink",
+      "category": "cases",
+      "unit": "EA",
+      "price": 6.0,
+      "stock": 120,
+      "variant_group": "case-iphone-14-with ring stand"
+    },
+    {
+      "sku": "ACCE.203",
+      "name": "bike mount",
+      "category": "accessories",
+      "unit": "EA",
+      "price": 6.64,
+      "stock": 40,
+      "variant_group": "mount-bike"
+    },
+    {
+      "sku": "CHAR.080",
+      "name": "Wall Charger 30w Usb-c Plus Usb Black Remax ",
+      "category": "chargers",
+      "unit": "DOZ",
+      "price": 7.0,
+      "stock": 0,
+      "variant_group": "wall-charger-30W"
+    },
+    {
+      "sku": "10153",
+      "name": "Screen protector iPhone 15 Pro ceramic ",
+      "category": "screen",
+      "unit": "CS/12",
+      "price": 2.83,
+      "stock": 8,
+      "variant_group": "screen-iphone-15-pro-ceramic"
+    },
+    {
+      "sku": "CAB-0035",
+      "name": "CBL LIGHTNING 10FT STNDARD BLUE",
+      "category": "cables",
+      "unit": "DOZ",
+      "price": 3.64,
+      "stock": 60,
+      "variant_group": "cable-lightning-10ft-standard"
+    },
+    {
+      "sku": "ACC-0226",
+      "name": "CAMERA LENS PROTECTOR IPHONE 15 PRO",
+      "category": "accessories",
+      "unit": "EA",
+      "price": 4.15,
+      "stock": 0,
+      "variant_group": "camera-lens-protector"
+    },
+    {
+      "sku": "ACC-0200",
+      "name": "Magnetic car mount",
+      "category": "accessories",
+      "unit": "PK/6",
+      "price": 6.11,
+      "stock": 0,
+      "variant_group": "mount-magnetic"
+    },
+    {
+      "sku": "CASE.130",
+      "name": "CASE GALAXY A25 SILICONE BLACK",
+      "category": "cases",
+      "unit": "EA",
+      "price": 6.42,
+      "stock": 60,
+      "variant_group": "case-galaxy-a25-silicone"
+    },
+    {
+      "sku": "SC152",
+      "name": "screen protector iphone 15 pro privacy",
+      "category": "screen",
+      "unit": "EA",
+      "price": 2.5,
+      "stock": 8,
+      "variant_group": "screen-iphone-15-pro-privacy"
+    },
+    {
+      "sku": "CABL.021",
+      "name": "Cable Lightning 3ft standard black Remax",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.5,
+      "stock": 120,
+      "variant_group": "cable-lightning-3ft-standard"
+    },
+    {
+      "sku": "A-61",
+      "name": "Wall Charger 5w Dual Usb Port White Premium",
+      "category": "chargers",
+      "unit": "BLISTER",
+      "price": 7.84,
+      "stock": 40,
+      "variant_group": "wall-charger-5W"
+    },
+    {
+      "sku": "CABL.024",
+      "name": "Cable  Lightning 3ft braided black Ldnio",
+      "category": "cables",
+      "unit": "DOZ",
+      "price": 4.0,
+      "stock": 60,
+      "variant_group": "cable-lightning-3ft-braided"
+    },
+    {
+      "sku": "A-95",
+      "name": "car charger 20w usb-c",
+      "category": "chargers",
+      "unit": "EA",
+      "price": 7.09,
+      "stock": 8,
+      "variant_group": "car-charger-20W"
+    },
+    {
+      "sku": "CASE.104",
+      "name": "CASE IPHONE 14 SILICONE BLUE",
+      "category": "cases",
+      "unit": "DOZ",
+      "price": 5.46,
+      "stock": 200,
+      "variant_group": "case-iphone-14-silicone"
+    },
+    {
+      "sku": "ACCE.225",
+      "name": "SELFIE STICK BLUETOOTH",
+      "category": "accessories",
+      "unit": "EA",
+      "price": 14.0,
+      "stock": 3,
+      "variant_group": "selfie-stick"
+    },
+    {
+      "sku": "A-112",
+      "name": "Case iPhone 15 rugged",
+      "category": "cases",
+      "unit": "EA",
+      "price": 6.37,
+      "stock": 200,
+      "variant_group": "case-iphone-15-rugged"
+    },
+    {
+      "sku": "AC199",
+      "name": "CAR VENT MOUNT",
+      "category": "accessories",
+      "unit": "PK/6",
+      "price": 8.5,
+      "stock": 12,
+      "variant_group": "mount-car"
+    },
+    {
+      "sku": "10111",
+      "name": "Case Iphone 15 Clear",
+      "category": "cases",
+      "unit": "EA",
+      "price": 6.97,
+      "stock": 25,
+      "variant_group": "case-iphone-15-clear"
+    },
+    {
+      "sku": "SCRE.155",
+      "name": "screen protector iphone 16 privacy",
+      "category": "screen",
+      "unit": "EA",
+      "price": 2.5,
+      "stock": 40,
+      "variant_group": "screen-iphone-16-privacy"
+    },
+    {
+      "sku": "A-213",
+      "name": "LIGHTNING TO 3.5MM ADPT",
+      "category": "accessories",
+      "unit": "EA",
+      "price": 7.29,
+      "stock": 12,
+      "variant_group": "adapter-lightning"
+    },
+    {
+      "sku": "10131",
+      "name": "CASE GALAXY A25 WITH RING STND BLK",
+      "category": "cases",
+      "unit": "DOZ",
+      "price": 6.5,
+      "stock": 200,
+      "variant_group": "case-galaxy-a25-with ring stand"
+    },
+    {
+      "sku": "A-51",
+      "name": "CABLE MICRO USB 6FT HEAVY DUTY BLACK REMAX",
+      "category": "cables",
+      "unit": "CS/24",
+      "price": 3.65,
+      "stock": 40,
+      "variant_group": "cable-micro usb-6ft-heavy duty"
+    },
+    {
+      "sku": "CABL.011",
+      "name": "Cable USB-C 6ft braided red Premium",
+      "category": "cables",
+      "unit": "BLISTER",
+      "price": 3.23,
+      "stock": 200,
+      "variant_group": "cable-usb-c-6ft-braided"
+    },
+    {
+      "sku": "CAS-0118",
+      "name": "CASE IPHONE 16 SIL BLUE ",
+      "category": "cases",
+      "unit": "DOZ",
+      "price": 5.46,
+      "stock": 0,
+      "variant_group": "case-iphone-16-silicone"
+    },
+    {
+      "sku": "SCRE.139",
+      "name": "SCRN PROT IPHONE 13 PRO HYDROGEL",
+      "category": "screen",
+      "unit": "CS/24",
+      "price": 2.5,
+      "stock": 3,
+      "variant_group": "screen-iphone-13-pro-hydrogel"
+    },
+    {
+      "sku": "STO-0208",
+      "name": "USB FLASH DRIVE 256GB",
+      "category": "storage",
+      "unit": "CS/24",
+      "price": 10.5,
+      "stock": 120,
+      "variant_group": "storage-256GB"
+    },
+    {
+      "sku": "CASE.123",
+      "name": "Case Iphone 16 Pro Rugged Black",
+      "category": "cases",
+      "unit": "CS/24",
+      "price": 6.5,
+      "stock": 40,
+      "variant_group": "case-iphone-16-pro-rugged"
+    },
+    {
+      "sku": "A-238",
+      "name": "CABLE USB-C 6FT BRAIDED RED PREMIUM",
+      "category": "cables",
+      "unit": "BLISTER",
+      "price": 3.0,
+      "stock": 200,
+      "variant_group": "cable-usb-c-6ft-braided"
+    },
+    {
+      "sku": "10017",
+      "name": "CBL  USB-C 10FT BRD BLUE REMAX",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.5,
+      "stock": 40,
+      "variant_group": "cable-usb-c-10ft-braided"
+    },
+    {
+      "sku": "SC159",
+      "name": "Screen protector Galaxy A15 privacy",
+      "category": "screen",
+      "unit": "EA",
+      "price": 2.75,
+      "stock": 3,
+      "variant_group": "screen-galaxy-a15-privacy"
+    },
+    {
+      "sku": "CAB-0048",
+      "name": "cable micro usb 3ft braided blue premium",
+      "category": "cables",
+      "unit": "DOZ",
+      "price": 3.5,
+      "stock": 3,
+      "variant_group": "cable-micro usb-3ft-braided"
+    },
+    {
+      "sku": "A-63",
+      "name": "wall charger 5w usb-c plus usb black",
+      "category": "chargers",
+      "unit": "CS/24",
+      "price": 8.0,
+      "stock": 25,
+      "variant_group": "wall-charger-5W"
+    },
+    {
+      "sku": "CA105",
+      "name": "Case iPhone 14 rugged black ",
+      "category": "cases",
+      "unit": "EA",
+      "price": 6.5,
+      "stock": 3,
+      "variant_group": "case-iphone-14-rugged"
+    },
+    {
+      "sku": "A-6",
+      "name": "Cable Usb-c 3ft Heavy Duty White",
+      "category": "cables",
+      "unit": "BLISTER",
+      "price": 3.5,
+      "stock": 40,
+      "variant_group": "cable-usb-c-3ft-heavy duty"
+    },
+    {
+      "sku": "CA135",
+      "name": "CASE GALAXY S24 CLR",
+      "category": "cases",
+      "unit": "CS/24",
+      "price": 6.25,
+      "stock": 0,
+      "variant_group": "case-galaxy-s24-clear"
+    },
+    {
+      "sku": "A-114",
+      "name": "CASE IPHONE 15 LEATHER PINK",
+      "category": "cases",
+      "unit": "CS/24",
+      "price": 6.9,
+      "stock": 3,
+      "variant_group": "case-iphone-15-leather"
+    },
+    {
+      "sku": "POWE.181",
+      "name": "Power Bank 10000mah",
+      "category": "power",
+      "unit": "CS/24",
+      "price": 25.18,
+      "stock": 60,
+      "variant_group": "powerbank-10000mAh"
+    },
+    {
+      "sku": "AUDI.197",
+      "name": " speaker large bluetooth with lights",
+      "category": "audio",
+      "unit": "CS/24",
+      "price": 27.5,
+      "stock": 0,
+      "variant_group": "speaker-large"
+    },
+    {
+      "sku": "SC146",
+      "name": "Screen Protector Iphone 14 Pro Max Ceramic",
+      "category": "screen",
+      "unit": "EA",
+      "price": 3.0,
+      "stock": 0,
+      "variant_group": "screen-iphone-14-pro-max-ceramic"
+    },
+    {
+      "sku": "A-78",
+      "name": "WALL CHARGER 30W USB-C PORT BLACK PREMIUM",
+      "category": "chargers",
+      "unit": "EA",
+      "price": 7.96,
+      "stock": 0,
+      "variant_group": "wall-charger-30W"
+    },
+    {
+      "sku": "10022",
+      "name": "CABLE LIGHTNING 3FT STANDARD WHITE BASEUS",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.0,
+      "stock": 0,
+      "variant_group": "cable-lightning-3ft-standard"
+    },
+    {
+      "sku": "CA132",
+      "name": "CASE GALAXY A25 LEATHER",
+      "category": "cases",
+      "unit": "CS/12",
+      "price": 6.63,
+      "stock": 0,
+      "variant_group": "case-galaxy-a25-leather"
+    },
+    {
+      "sku": "AC210",
+      "name": "micro usb otg adapter",
+      "category": "accessories",
+      "unit": "DOZ",
+      "price": 6.5,
+      "stock": 60,
+      "variant_group": "adapter-micro"
+    },
+    {
+      "sku": "CH073",
+      "name": "wall charger 20w dual usb port black baseus",
+      "category": "chargers",
+      "unit": "EA",
+      "price": 7.74,
+      "stock": 60,
+      "variant_group": "wall-charger-20W"
+    },
+    {
+      "sku": "10115",
+      "name": "Case iPhone 15 Pro clear",
+      "category": "cases",
+      "unit": "BLISTER",
+      "price": 5.99,
+      "stock": 3,
+      "variant_group": "case-iphone-15-pro-clear"
+    },
+    {
+      "sku": "A-185",
+      "name": "Power Bank 20000mah With Display",
+      "category": "power",
+      "unit": "EA",
+      "price": 19.2,
+      "stock": 40,
+      "variant_group": "powerbank-20000mAh"
+    },
+    {
+      "sku": "POW-0218",
+      "name": "replacement battery iphone 14 pro max",
+      "category": "power",
+      "unit": "CS/12",
+      "price": 14.5,
+      "stock": 0,
+      "variant_group": "battery-iphone-14-pro-max"
+    },
+    {
+      "sku": "A-87",
+      "name": "Wall charger 65W single USB port white",
+      "category": "chargers",
+      "unit": "PK/6",
+      "price": 6.89,
+      "stock": 0,
+      "variant_group": "wall-charger-65W"
+    },
+    {
+      "sku": "10007",
+      "name": "CABLE USB-C 3FT HEAVY DUTY BLUE AWEI ",
+      "category": "cables",
+      "unit": "DOZ",
+      "price": 2.79,
+      "stock": 120,
+      "variant_group": "cable-usb-c-3ft-heavy duty"
+    },
+    {
+      "sku": "10186",
+      "name": "power bank 20000mah fast charge",
+      "category": "power",
+      "unit": "DOZ",
+      "price": 25.0,
+      "stock": 25,
+      "variant_group": "powerbank-20000mAh"
+    },
+    {
+      "sku": "CH091",
+      "name": "WALL CHARGER 65W USB-C PORT WHITE PREMIUM",
+      "category": "chargers",
+      "unit": "EA",
+      "price": 7.46,
+      "stock": 3,
+      "variant_group": "wall-charger-65W"
+    },
+    {
+      "sku": "CAS-0232",
+      "name": "CASE IPHONE 15 RUGGED",
+      "category": "cases",
+      "unit": "EA",
+      "price": 5.47,
+      "stock": 200,
+      "variant_group": "case-iphone-15-rugged"
+    },
+    {
+      "sku": "CHA-0064",
+      "name": "WL CHGR 12W SINGLE USB PRT BLK LDNIO",
+      "category": "chargers",
+      "unit": "CS/24",
+      "price": 7.87,
+      "stock": 200,
+      "variant_group": "wall-charger-12W"
+    },
+    {
+      "sku": "SCR-0140",
+      "name": "SCREEN PROTECTOR IPHONE 14 TEMPERED GLASS",
+      "category": "screen",
+      "unit": "PK/6",
+      "price": 2.4,
+      "stock": 12,
+      "variant_group": "screen-iphone-14-tempered glass"
+    },
+    {
+      "sku": "CHAR.085",
+      "name": "WL CHGR 45W USB-C PLUS USB WHT HOCO",
+      "category": "chargers",
+      "unit": "EA",
+      "price": 8.21,
+      "stock": 25,
+      "variant_group": "wall-charger-45W"
+    },
+    {
+      "sku": "CAB-0025",
+      "name": "CABLE  LIGHTNING 3FT BRAIDED BLUE PREMIUM",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.3,
+      "stock": 25,
+      "variant_group": "cable-lightning-3ft-braided"
+    },
+    {
+      "sku": "A-5",
+      "name": "Cable USB-C 3ft braided white Ldnio",
+      "category": "cables",
+      "unit": "BLISTER",
+      "price": 3.13,
+      "stock": 60,
+      "variant_group": "cable-usb-c-3ft-braided"
+    },
+    {
+      "sku": "CH070",
+      "name": "WL CHGR 12W USB-C PLUS USB WHT BASEUS",
+      "category": "chargers",
+      "unit": "DOZ",
+      "price": 7.0,
+      "stock": 0,
+      "variant_group": "wall-charger-12W"
+    },
+    {
+      "sku": "CH084",
+      "name": "Wall Charger 45w Usb-c Plus Usb Black Remax ",
+      "category": "chargers",
+      "unit": "BLISTER",
+      "price": 9.0,
+      "stock": 12,
+      "variant_group": "wall-charger-45W"
+    },
+    {
+      "sku": "CHA-0067",
+      "name": "wall charger 12w dual usb port white premium",
+      "category": "chargers",
+      "unit": "EA",
+      "price": 8.0,
+      "stock": 120,
+      "variant_group": "wall-charger-12W"
+    },
+    {
+      "sku": "CAS-0100",
+      "name": "CASE IPHONE 13 WITH RING STAND PINK",
+      "category": "cases",
+      "unit": "BLISTER",
+      "price": 5.32,
+      "stock": 0,
+      "variant_group": "case-iphone-13-with ring stand"
+    },
+    {
+      "sku": "AUD-0179",
+      "name": " EARBUDS SPORT BLUETOOTH WHITE BASEUS",
+      "category": "audio",
+      "unit": "CS/12",
+      "price": 18.5,
+      "stock": 12,
+      "variant_group": "audio-sport"
+    },
+    {
+      "sku": "CHA-0098",
+      "name": "CAR CHARGER 36W USB-C",
+      "category": "chargers",
+      "unit": "CS/24",
+      "price": 6.2,
+      "stock": 12,
+      "variant_group": "car-charger-36W"
+    },
+    {
+      "sku": "SCRE.163",
+      "name": "SCRN PROT GALAXY A25 HYDROGEL",
+      "category": "screen",
+      "unit": "CS/24",
+      "price": 3.0,
+      "stock": 120,
+      "variant_group": "screen-galaxy-a25-hydrogel"
+    },
+    {
+      "sku": "10148",
+      "name": "Screen Protector Iphone 15 Tempered Glass",
+      "category": "screen",
+      "unit": "CS/12",
+      "price": 2.5,
+      "stock": 60,
+      "variant_group": "screen-iphone-15-tempered glass"
+    },
+    {
+      "sku": "SCRE.142",
+      "name": "Screen Protector Iphone 14 Hydrogel",
+      "category": "screen",
+      "unit": "CS/24",
+      "price": 2.57,
+      "stock": 200,
+      "variant_group": "screen-iphone-14-hydrogel"
+    },
+    {
+      "sku": "SCRE.240",
+      "name": "screen protector iphone 13 pro privacy",
+      "category": "screen",
+      "unit": "PK/6",
+      "price": 2.71,
+      "stock": 12,
+      "variant_group": "screen-iphone-13-pro-privacy"
+    },
+    {
+      "sku": "AUD-0198",
+      "name": "SPEAKER LARGE WATERPROOF BLUETOOTH",
+      "category": "audio",
+      "unit": "EA",
+      "price": 32.1,
+      "stock": 0,
+      "variant_group": "speaker-large"
+    },
+    {
+      "sku": "10054",
+      "name": "CBL MICRO USB 10FT STNDARD WHT",
+      "category": "cables",
+      "unit": "CS/12",
+      "price": 2.92,
+      "stock": 8,
+      "variant_group": "cable-micro usb-10ft-standard"
+    },
+    {
+      "sku": "CABL.042",
+      "name": "cable micro usb 3ft standard white premium",
+      "category": "cables",
+      "unit": "CS/24",
+      "price": 3.0,
+      "stock": 0,
+      "variant_group": "cable-micro usb-3ft-standard"
+    },
+    {
+      "sku": "10103",
+      "name": "CASE IPHONE 13 PRO LEATHER",
+      "category": "cases",
+      "unit": "EA",
+      "price": 5.5,
+      "stock": 8,
+      "variant_group": "case-iphone-13-pro-leather"
+    },
+    {
+      "sku": "CH096",
+      "name": "CAR CHARGER 20W USB-C PLUS USB",
+      "category": "chargers",
+      "unit": "CS/24",
+      "price": 7.34,
+      "stock": 0,
+      "variant_group": "car-charger-20W"
+    },
+    {
+      "sku": "CA121",
+      "name": "Case iPhone 16 Pro clear",
+      "category": "cases",
+      "unit": "EA",
+      "price": 5.31,
+      "stock": 120,
+      "variant_group": "case-iphone-16-pro-clear"
+    },
+    {
+      "sku": "CHAR.093",
+      "name": "car charger 12w dual port",
+      "category": "chargers",
+      "unit": "EA",
+      "price": 7.78,
+      "stock": 3,
+      "variant_group": "car-charger-12W"
+    },
+    {
+      "sku": "CA026",
+      "name": "CBL LIGHTNING 3FT HEAVY DUTY WHT",
+      "category": "cables",
+      "unit": "BLISTER",
+      "price": 3.54,
+      "stock": 12,
+      "variant_group": "cable-lightning-3ft-heavy duty"
+    },
+    {
+      "sku": "AUD-0171",
+      "name": "EARBUDS WIRED 3.5MM WHITE",
+      "category": "audio",
+      "unit": "CS/24",
+      "price": 16.59,
+      "stock": 0,
+      "variant_group": "audio-wired"
+    },
+    {
+      "sku": "CA036",
+      "name": "Cable Lightning 10ft Braided Black Ldnio",
+      "category": "cables",
+      "unit": "BLISTER",
+      "price": 3.0,
+      "stock": 8,
+      "variant_group": "cable-lightning-10ft-braided"
+    },
+    {
+      "sku": "A-231",
+      "name": "PHONE GRIP ASSORTED ",
+      "category": "accessories",
+      "unit": "EA",
+      "price": 2.0,
+      "stock": 60,
+      "variant_group": "phone-grip"
+    },
+    {
+      "sku": "SCRE.233",
+      "name": "Screen Protector Galaxy A15 Hydrogel",
+      "category": "screen",
+      "unit": "CS/24",
+      "price": 2.5,
+      "stock": 200,
+      "variant_group": "screen-galaxy-a15-hydrogel"
+    },
+    {
+      "sku": "POW-0214",
+      "name": "REPLACEMENT BATTERY IPHONE 13",
+      "category": "power",
+      "unit": "PK/6",
+      "price": 19.0,
+      "stock": 120,
+      "variant_group": "battery-iphone-13"
+    },
+    {
+      "sku": "10151",
+      "name": "screen protector iphone 15 pro tempered glass",
+      "category": "screen",
+      "unit": "PK/6",
+      "price": 2.5,
+      "stock": 3,
+      "variant_group": "screen-iphone-15-pro-tempered glass"
+    },
+    {
+      "sku": "A-19",
+      "name": "Cable Usb-c 10ft Heavy Duty White Generic",
+      "category": "cables",
+      "unit": "EA",
+      "price": 2.97,
+      "stock": 3,
+      "variant_group": "cable-usb-c-10ft-heavy duty"
+    },
+    {
+      "sku": "CAB-0018",
+      "name": "Cable USB-C 10ft heavy duty black",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.2,
+      "stock": 25,
+      "variant_group": "cable-usb-c-10ft-heavy duty"
+    },
+    {
+      "sku": "10079",
+      "name": "Wall Charger 30w Usb-c Port White Ldnio",
+      "category": "chargers",
+      "unit": "BLISTER",
+      "price": 7.0,
+      "stock": 200,
+      "variant_group": "wall-charger-30W"
+    },
+    {
+      "sku": "A-69",
+      "name": "Wall Charger 12w Usb-c Plus Usb Black Awei",
+      "category": "chargers",
+      "unit": "CS/24",
+      "price": 8.5,
+      "stock": 120,
+      "variant_group": "wall-charger-12W"
+    },
+    {
+      "sku": "CABL.050",
+      "name": "CBL MICRO USB 6FT STNDARD BLUE LDNIO",
+      "category": "cables",
+      "unit": "BLISTER",
+      "price": 2.5,
+      "stock": 0,
+      "variant_group": "cable-micro usb-6ft-standard"
+    },
+    {
+      "sku": "10088",
+      "name": "Wall  charger 65W dual USB port black Awei",
+      "category": "chargers",
+      "unit": "EA",
+      "price": 9.71,
+      "stock": 200,
+      "variant_group": "wall-charger-65W"
+    },
+    {
+      "sku": "SCRE.138",
+      "name": "Screen protector iPhone 13 Pro privacy ",
+      "category": "screen",
+      "unit": "PK/6",
+      "price": 2.85,
+      "stock": 12,
+      "variant_group": "screen-iphone-13-pro-privacy"
+    },
+    {
+      "sku": "SCR-0147",
+      "name": " SCRN PROT IPHONE 14 PRO MAX HYDROGEL",
+      "category": "screen",
+      "unit": "PK/6",
+      "price": 3.5,
+      "stock": 120,
+      "variant_group": "screen-iphone-14-pro-max-hydrogel"
+    },
+    {
+      "sku": "A-39",
+      "name": "Cable Lightning 10ft heavy duty white Generic",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.1,
+      "stock": 8,
+      "variant_group": "cable-lightning-10ft-heavy duty"
+    },
+    {
+      "sku": "CASE.102",
+      "name": "case iphone 13 pro with ring stand blue",
+      "category": "cases",
+      "unit": "EA",
+      "price": 6.94,
+      "stock": 60,
+      "variant_group": "case-iphone-13-pro-with ring stand"
+    },
+    {
+      "sku": "CASE.133",
+      "name": "case galaxy a55 silicone black",
+      "category": "cases",
+      "unit": "EA",
+      "price": 6.92,
+      "stock": 25,
+      "variant_group": "case-galaxy-a55-silicone"
+    },
+    {
+      "sku": "10013",
+      "name": "Cable Usb-c 10ft Standard White Baseus",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.5,
+      "stock": 200,
+      "variant_group": "cable-usb-c-10ft-standard"
+    },
+    {
+      "sku": "CH081",
+      "name": "Wall Charger 30w Usb-c Plus Usb White Hoco",
+      "category": "chargers",
+      "unit": "EA",
+      "price": 10.0,
+      "stock": 0,
+      "variant_group": "wall-charger-30W"
+    },
+    {
+      "sku": "CHA-0092",
+      "name": "WL CHGR 65W USB-C PLUS USB BLK REMAX",
+      "category": "chargers",
+      "unit": "CS/12",
+      "price": 7.04,
+      "stock": 60,
+      "variant_group": "wall-charger-65W"
+    },
+    {
+      "sku": "PO187",
+      "name": "POWER BANK 20000MAH SOLAR",
+      "category": "power",
+      "unit": "DOZ",
+      "price": 23.5,
+      "stock": 120,
+      "variant_group": "powerbank-20000mAh"
+    },
+    {
+      "sku": "CASE.109",
+      "name": "Case iPhone 14 Pro Max clear ",
+      "category": "cases",
+      "unit": "EA",
+      "price": 4.89,
+      "stock": 12,
+      "variant_group": "case-iphone-14-pro-max-clear"
+    },
+    {
+      "sku": "CAB-0004",
+      "name": "Cable USB-C 3ft braided black Generic",
+      "category": "cables",
+      "unit": "DOZ",
+      "price": 3.0,
+      "stock": 12,
+      "variant_group": "cable-usb-c-3ft-braided"
+    },
+    {
+      "sku": "POW-0217",
+      "name": "REPLACEMENT BATT IPHONE 14 PRO",
+      "category": "power",
+      "unit": "EA",
+      "price": 18.5,
+      "stock": 200,
+      "variant_group": "battery-iphone-14-pro"
+    },
+    {
+      "sku": "SC144",
+      "name": "Screen Protector Iphone 14 Pro Privacy ",
+      "category": "screen",
+      "unit": "EA",
+      "price": 3.5,
+      "stock": 40,
+      "variant_group": "screen-iphone-14-pro-privacy"
+    },
+    {
+      "sku": "A-212",
+      "name": "usb-c to hdmi adapter",
+      "category": "accessories",
+      "unit": "CS/12",
+      "price": 6.93,
+      "stock": 0,
+      "variant_group": "adapter-USB-C"
+    },
+    {
+      "sku": "CHAR.065",
+      "name": "Wall Charger 12w Single Usb Port White Awei",
+      "category": "chargers",
+      "unit": "EA",
+      "price": 8.09,
+      "stock": 40,
+      "variant_group": "wall-charger-12W"
+    },
+    {
+      "sku": "CA137",
+      "name": "CASE GALAXY S24 LEATHER PINK",
+      "category": "cases",
+      "unit": "EA",
+      "price": 7.0,
+      "stock": 0,
+      "variant_group": "case-galaxy-s24-leather"
+    },
+    {
+      "sku": "CHA-0071",
+      "name": "wall charger 20w single usb port black",
+      "category": "chargers",
+      "unit": "CS/24",
+      "price": 8.98,
+      "stock": 120,
+      "variant_group": "wall-charger-20W"
+    },
+    {
+      "sku": "CASE.125",
+      "name": "case iphone 16 pro leather blue",
+      "category": "cases",
+      "unit": "CS/12",
+      "price": 6.72,
+      "stock": 120,
+      "variant_group": "case-iphone-16-pro-leather"
+    },
+    {
+      "sku": "CABL.057",
+      "name": "Cable Micro USB 10ft braided red Generic",
+      "category": "cables",
+      "unit": "BLISTER",
+      "price": 3.5,
+      "stock": 12,
+      "variant_group": "cable-micro usb-10ft-braided"
+    },
+    {
+      "sku": "CAS-0099",
+      "name": "Case iPhone 13 silicone",
+      "category": "cases",
+      "unit": "EA",
+      "price": 6.5,
+      "stock": 0,
+      "variant_group": "case-iphone-13-silicone"
+    },
+    {
+      "sku": "A-60",
+      "name": "WL CHGR 5W DUAL USB PRT BLK",
+      "category": "chargers",
+      "unit": "CS/24",
+      "price": 9.0,
+      "stock": 120,
+      "variant_group": "wall-charger-5W"
+    },
+    {
+      "sku": "PO221",
+      "name": "Replacement Battery Iphone 16 ",
+      "category": "power",
+      "unit": "CS/24",
+      "price": 19.65,
+      "stock": 60,
+      "variant_group": "battery-iphone-16"
+    },
+    {
+      "sku": "10241",
+      "name": " CASE IPHONE 15 WITH RING STND",
+      "category": "cases",
+      "unit": "DOZ",
+      "price": 6.5,
+      "stock": 60,
+      "variant_group": "case-iphone-15-with ring stand"
+    },
+    {
+      "sku": "AU173",
+      "name": " EARBUDS WIRED USB-C WHITE",
+      "category": "audio",
+      "unit": "EA",
+      "price": 13.5,
+      "stock": 0,
+      "variant_group": "audio-wired"
+    },
+    {
+      "sku": "PO183",
+      "name": "power bank 10000mah solar",
+      "category": "power",
+      "unit": "EA",
+      "price": 19.5,
+      "stock": 0,
+      "variant_group": "powerbank-10000mAh"
+    },
+    {
+      "sku": "CAS-0127",
+      "name": "CASE GALAXY A15 SIL BLUE",
+      "category": "cases",
+      "unit": "EA",
+      "price": 6.0,
+      "stock": 8,
+      "variant_group": "case-galaxy-a15-silicone"
+    },
+    {
+      "sku": "CA033",
+      "name": "cable lightning 6ft heavy duty red ldnio",
+      "category": "cables",
+      "unit": "CS/24",
+      "price": 3.5,
+      "stock": 0,
+      "variant_group": "cable-lightning-6ft-heavy duty"
+    },
+    {
+      "sku": "CABL.001",
+      "name": "CBL USB-C 3FT STNDARD BLK PREMIUM",
+      "category": "cables",
+      "unit": "PK/6",
+      "price": 3.61,
+      "stock": 0,
+      "variant_group": "cable-usb-c-3ft-standard"
+    },
+    {
+      "sku": "A-149",
+      "name": "Screen protector iPhone 15 privacy",
+      "category": "screen",
+      "unit": "BLISTER",
+      "price": 2.5,
+      "stock": 25,
+      "variant_group": "screen-iphone-15-privacy"
+    },
+    {
+      "sku": "POW-0220",
+      "name": "replacement battery iphone 15 pro ",
+      "category": "power",
+      "unit": "CS/24",
+      "price": 16.5,
+      "stock": 3,
+      "variant_group": "battery-iphone-15-pro"
+    },
+    {
+      "sku": "SCR-0162",
+      "name": "Screen  protector Galaxy A25 privacy",
+      "category": "screen",
+      "unit": "EA",
+      "price": 3.06,
+      "stock": 40,
+      "variant_group": "screen-galaxy-a25-privacy"
+    },
+    {
+      "sku": "A-150",
+      "name": "screen protector iphone 15 hydrogel",
+      "category": "screen",
+      "unit": "CS/24",
+      "price": 3.0,
+      "stock": 0,
+      "variant_group": "screen-iphone-15-hydrogel"
+    },
+    {
+      "sku": "AU192",
+      "name": "SPEAKER MINI WATERPROOF BLUETOOTH",
+      "category": "audio",
+      "unit": "EA",
+      "price": 31.17,
+      "stock": 8,
+      "variant_group": "speaker-mini"
+    },
+    {
+      "sku": "A-141",
+      "name": "Screen protector iPhone 14 privacy",
+      "category": "screen",
+      "unit": "PK/6",
+      "price": 3.0,
+      "stock": 12,
+      "variant_group": "screen-iphone-14-privacy"
+    },
+    {
+      "sku": "CH075",
+      "name": "wall charger 20w usb-c port white",
+      "category": "chargers",
+      "unit": "BLISTER",
+      "price": 8.36,
+      "stock": 25,
+      "variant_group": "wall-charger-20W"
+    },
+    {
+      "sku": "AUDI.174",
+      "name": "ERBDS BLUETOOTH ERBDS BLK HOCO",
+      "category": "audio",
+      "unit": "EA",
+      "price": 13.67,
+      "stock": 25,
+      "variant_group": "audio-bluetooth"
+    },
+    {
+      "sku": "CA124",
+      "name": "CASE IPHONE 16 PRO WITH RING STAND PINK",
+      "category": "cases",
+      "unit": "CS/24",
+      "price": 7.0,
+      "stock": 8,
+      "variant_group": "case-iphone-16-pro-with ring stand"
+    },
+    {
+      "sku": "SCRE.157",
+      "name": "SCRN PROT IPHONE 16 PRO PRIVACY",
+      "category": "screen",
+      "unit": "DOZ",
+      "price": 3.15,
+      "stock": 40,
+      "variant_group": "screen-iphone-16-pro-privacy"
+    },
+    {
+      "sku": "CAB-0034",
+      "name": "Cable Lightning 10ft Standard Black Generic",
+      "category": "cables",
+      "unit": "PK/6",
+      "price": 3.0,
+      "stock": 40,
+      "variant_group": "cable-lightning-10ft-standard"
+    },
+    {
+      "sku": "CHAR.062",
+      "name": "wall charger 5w usb-c port white hoco",
+      "category": "chargers",
+      "unit": "EA",
+      "price": 9.24,
+      "stock": 12,
+      "variant_group": "wall-charger-5W"
+    },
+    {
+      "sku": "10166",
+      "name": "Screen Protector Galaxy S24 Tempered Glass",
+      "category": "screen",
+      "unit": "DOZ",
+      "price": 2.5,
+      "stock": 8,
+      "variant_group": "screen-galaxy-s24-tempered glass"
+    },
+    {
+      "sku": "SCR-0158",
+      "name": "SCRN PROT IPHONE 16 PRO HYDROGEL",
+      "category": "screen",
+      "unit": "CS/24",
+      "price": 3.04,
+      "stock": 0,
+      "variant_group": "screen-iphone-16-pro-hydrogel"
+    },
+    {
+      "sku": "CA038",
+      "name": "Cable Lightning 10ft Braided Blue Premium",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.0,
+      "stock": 120,
+      "variant_group": "cable-lightning-10ft-braided"
+    },
+    {
+      "sku": "A-58",
+      "name": "Cable Micro USB 10ft heavy duty white Awei",
+      "category": "cables",
+      "unit": "BLISTER",
+      "price": 3.5,
+      "stock": 25,
+      "variant_group": "cable-micro usb-10ft-heavy duty"
+    },
+    {
+      "sku": "CHA-0068",
+      "name": "Wall Charger 12w Usb-c Port Black Awei",
+      "category": "chargers",
+      "unit": "EA",
+      "price": 8.92,
+      "stock": 40,
+      "variant_group": "wall-charger-12W"
+    },
+    {
+      "sku": "CABL.002",
+      "name": "Cable Usb-c 3ft Standard White Premium",
+      "category": "cables",
+      "unit": "PK/6",
+      "price": 2.85,
+      "stock": 0,
+      "variant_group": "cable-usb-c-3ft-standard"
+    },
+    {
+      "sku": "A-31",
+      "name": "Cable Lightning 6ft Braided Red Ldnio",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.19,
+      "stock": 200,
+      "variant_group": "cable-lightning-6ft-braided"
+    },
+    {
+      "sku": "A-40",
+      "name": "CBL  LIGHTNING 10FT HEAVY DUTY RED LDNIO",
+      "category": "cables",
+      "unit": "BLISTER",
+      "price": 3.6,
+      "stock": 0,
+      "variant_group": "cable-lightning-10ft-heavy duty"
+    },
+    {
+      "sku": "10049",
+      "name": "cable micro usb 3ft heavy duty blue baseus",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.0,
+      "stock": 0,
+      "variant_group": "cable-micro usb-3ft-heavy duty"
+    },
+    {
+      "sku": "CABL.027",
+      "name": "cable lightning 3ft heavy duty red ldnio",
+      "category": "cables",
+      "unit": "EA",
+      "price": 3.75,
+      "stock": 25,
+      "variant_group": "cable-lightning-3ft-heavy duty"
+    },
+    {
+      "sku": "ACC-0201",
+      "name": "Windshield Car Mount",
+      "category": "accessories",
+      "unit": "DOZ",
+      "price": 7.0,
+      "stock": 0,
+      "variant_group": "mount-windshield"
+    },
+    {
+      "sku": "10230",
+      "name": "SCREEN CLEANING KIT",
+      "category": "accessories",
+      "unit": "DOZ",
+      "price": 3.0,
+      "stock": 12,
+      "variant_group": "screen-cleaning-kit"
+    },
+    {
+      "sku": "A-128",
+      "name": "Case Galaxy A15 Rugged Blue",
+      "category": "cases",
+      "unit": "EA",
+      "price": 6.04,
+      "stock": 25,
+      "variant_group": "case-galaxy-a15-rugged"
+    },
+    {
+      "sku": "SCRE.156",
+      "name": "SCRN  PROT IPHONE 16 CERAMIC",
+      "category": "screen",
+      "unit": "EA",
+      "price": 3.0,
+      "stock": 25,
+      "variant_group": "screen-iphone-16-ceramic"
+    },
+    {
+      "sku": "ACCE.202",
+      "name": "Desk stand",
+      "category": "accessories",
+      "unit": "BLISTER",
+      "price": 8.58,
+      "stock": 3,
+      "variant_group": "mount-desk"
+    }
+  ]
+}
