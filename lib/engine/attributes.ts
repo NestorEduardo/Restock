@@ -11,6 +11,27 @@ const CONNECTOR_PATTERNS: Array<{ pattern: RegExp; value: string }> = [
 const COLOR_PATTERN =
   /\b(black|white|red|blue|clear|green|pink|purple|gold|silver|gray|grey)\b/;
 
+const VARIANT_PATTERNS: Array<{ pattern: RegExp; value: string }> = [
+  { pattern: /\btempered\s+glass\b/, value: "tempered glass" },
+  { pattern: /\bheavy[\s-]duty\b/, value: "heavy duty" },
+  { pattern: /\b(?:with\s+)?ring\s+stand\b/, value: "ring stand" },
+  { pattern: /\bover[\s-]ear\b/, value: "over ear" },
+  { pattern: /\bsport\b/, value: "sport" },
+  { pattern: /\bprivacy\b/, value: "privacy" },
+  { pattern: /\bceramic\b/, value: "ceramic" },
+  { pattern: /\bhydrogel\b/, value: "hydrogel" },
+  { pattern: /\bbraided\b/, value: "braided" },
+  { pattern: /\bsilicone\b/, value: "silicone" },
+  { pattern: /\brugged\b/, value: "rugged" },
+  { pattern: /\bleather\b/, value: "leather" },
+  { pattern: /\bbluetooth\b/, value: "bluetooth" },
+  { pattern: /\bwired\b/, value: "wired" },
+  { pattern: /\bclear\b/, value: "clear" },
+];
+
+const AUDIO_PRODUCT_TYPES = new Set(["earbuds", "headphones", "speaker"]);
+const AUDIO_ONLY_VARIANTS = new Set(["wired", "bluetooth", "sport", "over ear"]);
+
 const PHONE_MODEL_PATTERNS: RegExp[] = [
   /\biphone\s+\d+(?:\s+pro(?:\s+max)?|\s+plus|\s+mini)?\b/,
   /\bgalaxy\s+s\d+(?:\s+ultra|\s+plus|\s+fe)?\b/,
@@ -67,8 +88,25 @@ export function extractAttributes(text: string): Partial<ExtractedAttributes> {
     attributes.size = `${sizeInch} inch`;
   }
 
+  for (const { pattern, value } of VARIANT_PATTERNS) {
+    if (!pattern.test(normalized)) {
+      continue;
+    }
+
+    if (
+      AUDIO_ONLY_VARIANTS.has(value) &&
+      (!attributes.productType ||
+        !AUDIO_PRODUCT_TYPES.has(attributes.productType))
+    ) {
+      continue;
+    }
+
+    attributes.variant = value;
+    break;
+  }
+
   const color = firstMatch(normalized, COLOR_PATTERN);
-  if (color) {
+  if (color && !(color === "clear" && attributes.variant === "clear")) {
     attributes.color = color;
   }
 
@@ -157,7 +195,7 @@ export function attributesConflict(
   return false;
 }
 
-function phoneModelsCompatible(queryModel: string, itemModel: string): boolean {
+export function phoneModelsCompatible(queryModel: string, itemModel: string): boolean {
   if (queryModel === itemModel) {
     return true;
   }

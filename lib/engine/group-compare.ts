@@ -1,4 +1,5 @@
 import { prepareSearchText } from "@/lib/engine/prepare";
+import { phoneModelsCompatible } from "@/lib/engine/attributes";
 import { productTypesCompatible } from "@/lib/engine/product-type";
 import {
   PRODUCT_CHANGING_ATTRIBUTES,
@@ -14,6 +15,62 @@ export type DistinguishingAttribute = {
   values: string[];
   groups: SearchResult[];
 };
+
+function phoneModelGeneration(model: string): string | undefined {
+  return model.match(/\d{2}/)?.[0];
+}
+
+function isStrictPhoneModelMatch(queryModel: string, itemModel: string): boolean {
+  if (!phoneModelsCompatible(queryModel, itemModel)) {
+    return false;
+  }
+
+  if (!/\bpro\b/.test(queryModel) && /\bpro\b/.test(itemModel)) {
+    return false;
+  }
+
+  if (!/\bmax\b/.test(queryModel) && /\bmax\b/.test(itemModel)) {
+    return false;
+  }
+
+  if (!/\bplus\b/.test(queryModel) && /\bplus\b/.test(itemModel)) {
+    return false;
+  }
+
+  return true;
+}
+
+function filterPhoneModelValuesForQuery(
+  values: string[],
+  queryModel: string | undefined,
+  queryVariant: string | undefined,
+): string[] {
+  if (!queryModel) {
+    return values;
+  }
+
+  if (queryVariant) {
+    return values.filter((value) =>
+      isStrictPhoneModelMatch(queryModel, value),
+    );
+  }
+
+  const queryGeneration = phoneModelGeneration(queryModel);
+  if (!queryGeneration) {
+    return values;
+  }
+
+  return values.filter(
+    (value) => phoneModelGeneration(value) === queryGeneration,
+  );
+}
+
+function shouldSkipDistinguishingAttribute(
+  attribute: ProductChangingAttribute,
+  queryAttributes: Partial<ExtractedAttributes>,
+): boolean {
+  return attribute === "variant" && Boolean(queryAttributes.variant);
+}
 
 function normalisePhoneModel(model: string): string {
   return model
@@ -122,8 +179,13 @@ export function groupsDifferOnAttribute(
 export function groupsHaveProductChangingConflict(
   top: SearchResult,
   other: SearchResult,
+  queryAttributes: Partial<ExtractedAttributes> = {},
 ): boolean {
   for (const attribute of PRODUCT_CHANGING_ATTRIBUTES) {
+    if (shouldSkipDistinguishingAttribute(attribute, queryAttributes)) {
+      continue;
+    }
+
     if (
       groupsDifferOnAttribute(top.groupAttributes, other.groupAttributes, attribute)
     ) {
@@ -214,7 +276,18 @@ export function findDistinguishingAttribute(
   }
 
   for (const attribute of PRODUCT_CHANGING_ATTRIBUTES) {
-    const values = distinctValuesForAttribute(competitive, attribute);
+    if (shouldSkipDistinguishingAttribute(attribute, queryAttributes)) {
+      continue;
+    }
+
+    const values =
+      attribute === "phoneModel"
+        ? filterPhoneModelValuesForQuery(
+            distinctValuesForAttribute(competitive, attribute),
+            queryAttributes.phoneModel,
+            queryAttributes.variant,
+          )
+        : distinctValuesForAttribute(competitive, attribute);
 
     if (values.length < 2 || values.length > 4) {
       continue;
@@ -247,5 +320,7 @@ export function hasProductChangingOverride(
     return false;
   }
 
-  return competitive.slice(1).some((group) => groupsHaveProductChangingConflict(top, group));
+  return competitive
+    .slice(1)
+    .some((group) => groupsHaveProductChangingConflict(top, group, queryAttributes));
 }

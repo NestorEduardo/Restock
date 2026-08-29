@@ -26,6 +26,8 @@ export class FakeQuestioner implements ClarificationQuestioner {
         return `What type of product — ${values}?`;
       case "phoneModel":
         return `Which model — ${values}?`;
+      case "variant":
+        return `Which type — ${values}?`;
       case "length":
         return `Which length — ${values}?`;
       case "size":
