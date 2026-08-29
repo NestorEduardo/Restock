@@ -1,5 +1,6 @@
 const STEM_EXCEPTIONS = new Set([
   "glass",
+  "lens",
   "plus",
   "max",
   "pro",

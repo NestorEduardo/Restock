@@ -3,6 +3,7 @@ export const CLEAR_SCORE_RATIO_THRESHOLD = 1.15;
 export const PRODUCT_CHANGING_ATTRIBUTES = [
   "productType",
   "phoneModel",
+  "variant",
   "connector",
   "length",
   "size",
@@ -15,6 +16,7 @@ export type ProductChangingAttribute =
 
 export type ExtractedAttributes = {
   productType?: string;
+  variant?: string;
   connector?: string;
   length?: string;
   size?: string;

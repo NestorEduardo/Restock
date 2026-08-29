@@ -24,12 +24,25 @@ import type { CatalogItem } from "@/lib/types";
 const ATTRIBUTE_LABELS: Record<ProductChangingAttribute, string> = {
   productType: "product type",
   phoneModel: "model",
+  variant: "type",
   connector: "connector",
   length: "length",
   size: "size",
   wattage: "wattage",
   capacity: "capacity",
 };
+
+const REASON_ATTRIBUTE_ORDER: Array<keyof ExtractedAttributes> = [
+  "productType",
+  "phoneModel",
+  "variant",
+  "connector",
+  "length",
+  "size",
+  "wattage",
+  "capacity",
+  "color",
+];
 
 function formatAttributeLabel(
   key: keyof ExtractedAttributes,
@@ -77,11 +90,13 @@ function isVagueProductQuery(
   return hasVagueReference || !hasSpecificAttributes;
 }
 
-function buildMatchReason(matched: Partial<ExtractedAttributes>): string {
+function buildMatchReason(
+  groupAttributes: Partial<ExtractedAttributes>,
+): string {
   const parts: string[] = [];
 
-  for (const key of Object.keys(matched) as Array<keyof ExtractedAttributes>) {
-    const value = matched[key];
+  for (const key of REASON_ATTRIBUTE_ORDER) {
+    const value = groupAttributes[key];
     if (!value) {
       continue;
     }
@@ -218,7 +233,7 @@ function resolveLine(
     unit: catalogItem.unit,
     price: catalogItem.price,
     quantity,
-    reason: buildMatchReason(result.matchedAttributes),
+    reason: buildMatchReason(result.groupAttributes),
     availability: buildAvailability(catalogItem.stock, quantity),
     unitRecognised: unitRecognition.recognised,
     buyerUnit,
@@ -253,6 +268,20 @@ export function decideLine(
     hasProductChangingOverride(results, queryAttributes);
 
   if (needsClarification) {
+    const unspecifiedModelClarification = findUnspecifiedPhoneModelClarification(
+      results,
+      queryAttributes,
+      line.description,
+    );
+    if (unspecifiedModelClarification) {
+      return buildClarificationOutcome(
+        unspecifiedModelClarification.attribute,
+        unspecifiedModelClarification.values,
+        unspecifiedModelClarification.groups,
+        questioner,
+      );
+    }
+
     const distinguishing = findDistinguishingAttribute(
       results,
       queryAttributes,

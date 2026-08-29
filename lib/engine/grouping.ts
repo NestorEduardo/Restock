@@ -24,6 +24,9 @@ export function buildGroupSignature(
   if (attributes.phoneModel) {
     parts.push(`model:${attributes.phoneModel}`);
   }
+  if (attributes.variant) {
+    parts.push(`variant:${attributes.variant}`);
+  }
   if (attributes.wattage) {
     parts.push(`wattage:${attributes.wattage}`);
   }
