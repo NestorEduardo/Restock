@@ -1,4 +1,5 @@
 import WebMCP from "@/components/WebMCP";
+import { OrderDraftProvider } from "@/components/order/OrderDraftContext";
 import OrderPage from "@/components/order/OrderPage";
 
 export default function Home() {
@@ -11,9 +12,10 @@ export default function Home() {
         </p>
       </header>
 
-      <OrderPage />
-
-      <WebMCP />
+      <OrderDraftProvider>
+        <OrderPage />
+        <WebMCP />
+      </OrderDraftProvider>
     </main>
   );
 }
