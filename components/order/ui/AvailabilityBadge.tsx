@@ -15,7 +15,7 @@ export default function AvailabilityBadge({
     availability === "out_of_stock" ? "Out of stock" : "Insufficient stock";
 
   return (
-    <span className="inline-flex items-center rounded bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-800">
+    <span className="inline-flex items-center rounded-md bg-warning-bg px-2 py-0.5 text-xs font-medium text-warning">
       {label}
     </span>
   );
