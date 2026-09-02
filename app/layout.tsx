@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Restock",
-  description: "Natural-language B2B ordering portal",
+  title: "Harbor Wireless Supply — Ordering Portal",
+  description: "Wholesale phone accessory ordering portal",
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <body className="flex min-h-screen flex-col antialiased">{children}</body>
     </html>
   );
 }

@@ -32,13 +32,16 @@ export default function WebMCP() {
     confirmOrder,
     getDraftSnapshot,
   });
-  actionsRef.current = {
-    lines,
-    resolveMessage,
-    pickOption,
-    confirmOrder,
-    getDraftSnapshot,
-  };
+
+  useEffect(() => {
+    actionsRef.current = {
+      lines,
+      resolveMessage,
+      pickOption,
+      confirmOrder,
+      getDraftSnapshot,
+    };
+  }, [lines, resolveMessage, pickOption, confirmOrder, getDraftSnapshot]);
 
   useEffect(() => {
     const modelContext =
@@ -228,5 +231,5 @@ export default function WebMCP() {
     statusText = `WebMCP: registration failed${errorMessage ? ` (${errorMessage})` : ""}`;
   }
 
-  return <p className="text-sm text-gray-600">{statusText}</p>;
+  return <p className="text-[10px] text-muted-foreground/60">{statusText}</p>;
 }

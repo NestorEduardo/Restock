@@ -1,1 +1,53 @@
 @import "tailwindcss";
+
+@theme {
+  /* Brand — Harbor Wireless Supply */
+  --color-brand: #1e4d6e;
+  --color-brand-foreground: #ffffff;
+  --color-brand-subtle: #e8f1f7;
+  --color-brand-muted: #3d7a9e;
+
+  /* Neutrals */
+  --color-background: #f4f6f9;
+  --color-foreground: #1a2332;
+  --color-muted: #e8ecf1;
+  --color-muted-foreground: #5c6b7f;
+  --color-border: #d1dae6;
+  --color-surface: #ffffff;
+  --color-surface-raised: #fafbfc;
+
+  /* Semantic — line states */
+  --color-success: #047857;
+  --color-success-bg: #ecfdf5;
+  --color-success-border: #6ee7b7;
+  --color-success-foreground: #065f46;
+
+  --color-warning: #b45309;
+  --color-warning-bg: #fffbeb;
+  --color-warning-border: #fcd34d;
+  --color-warning-foreground: #92400e;
+
+  --color-danger: #b91c1c;
+  --color-danger-bg: #fef2f2;
+  --color-danger-border: #fca5a5;
+  --color-danger-foreground: #991b1b;
+
+  /* Radii */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /* Shadows */
+  --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.06);
+  --shadow-elevated: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.06);
+
+  /* Typography */
+  --font-sans: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}

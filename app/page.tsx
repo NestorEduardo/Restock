@@ -1,21 +1,23 @@
-import WebMCP from "@/components/WebMCP";
+import { JsonCatalogSource } from "@/lib/catalog/json-source";
+
 import { OrderDraftProvider } from "@/components/order/OrderDraftContext";
 import OrderPage from "@/components/order/OrderPage";
+import PortalFooter from "@/components/portal/PortalFooter";
+import PortalHeader from "@/components/portal/PortalHeader";
 
-export default function Home() {
+export default async function Home() {
+  const catalog = new JsonCatalogSource();
+  const catalogInfo = await catalog.getInfo("demo");
+
   return (
-    <main className="mx-auto flex min-h-screen max-w-6xl flex-col gap-6 p-6 lg:p-8">
-      <header>
-        <h1 className="text-3xl font-bold text-gray-900">Restock</h1>
-        <p className="mt-1 text-gray-600">
-          Natural-language B2B ordering portal for distributor catalogs.
-        </p>
-      </header>
+    <OrderDraftProvider>
+      <PortalHeader catalog={catalogInfo} />
 
-      <OrderDraftProvider>
+      <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col gap-5 px-4 py-5 sm:px-6 sm:py-6">
         <OrderPage />
-        <WebMCP />
-      </OrderDraftProvider>
-    </main>
+      </main>
+
+      <PortalFooter />
+    </OrderDraftProvider>
   );
 }

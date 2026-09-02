@@ -6,6 +6,8 @@ import type { CatalogItem } from "@/lib/types";
 
 type CatalogJson = {
   distributor: string;
+  currency: string;
+  updated: string;
   products: Array<{
     sku: string;
     name: string;
@@ -17,23 +19,24 @@ type CatalogJson = {
 };
 
 export class JsonCatalogSource implements CatalogSource {
-  private cachedItems: CatalogItem[] | null = null;
+  private cachedCatalog: CatalogJson | null = null;
   private cachedInfo: CatalogInfo | null = null;
 
   private loadCatalog(): CatalogJson {
+    if (this.cachedCatalog) {
+      return this.cachedCatalog;
+    }
+
     const catalogPath = path.join(process.cwd(), "data", "catalog.json");
     const raw = readFileSync(catalogPath, "utf-8");
-    return JSON.parse(raw) as CatalogJson;
+    this.cachedCatalog = JSON.parse(raw) as CatalogJson;
+    return this.cachedCatalog;
   }
 
   async listItems(tenantId: string): Promise<CatalogItem[]> {
-    if (this.cachedItems) {
-      return this.cachedItems.map((item) => ({ ...item, tenantId }));
-    }
-
     const parsed = this.loadCatalog();
 
-    this.cachedItems = parsed.products.map((product) => ({
+    return parsed.products.map((product) => ({
       tenantId,
       id: product.sku,
       name: product.name,
@@ -41,11 +44,10 @@ export class JsonCatalogSource implements CatalogSource {
       stock: product.stock,
       unit: product.unit,
     }));
-
-    return this.cachedItems;
   }
 
-  async getInfo(_tenantId: string): Promise<CatalogInfo> {
+  async getInfo(tenantId: string): Promise<CatalogInfo> {
+    void tenantId;
     if (this.cachedInfo) {
       return this.cachedInfo;
     }
