@@ -12,9 +12,7 @@ import {
 import type { LineOutcome } from "@/lib/engine/types";
 import {
   applyResolvedOutcome,
-  canConfirm,
   createDraftLines,
-  orderTotal,
   removeLine,
   updateLineQuantity,
 } from "@/lib/order/draft-helpers";
@@ -136,11 +134,8 @@ export function OrderDraftProvider({ children }: { children: ReactNode }) {
           throw new Error(data.error ?? "Failed to resolve option");
         }
 
-        let nextLines: DraftLine[] = [];
-        setLines((current) => {
-          nextLines = applyResolvedOutcome(current, lineId, data);
-          return nextLines;
-        });
+        const nextLines = applyResolvedOutcome(lines, lineId, data);
+        setLines(nextLines);
         return serializeDraftSnapshot(nextLines, false);
       } catch (pickError) {
         const messageText =

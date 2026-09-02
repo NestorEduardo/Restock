@@ -3,10 +3,29 @@ import {
   orderTotal,
   pendingClarificationCount,
 } from "@/lib/order/draft-helpers";
+import type { DraftSnapshot } from "@/lib/order/tool-serializers";
 
 import { webMcpOrderActionsRef } from "@/components/webmcp/actions-ref";
 
 export const RESTOCK_WEBMCP_TOOL_COUNT = 5;
+
+function toolError(reason: string): { ok: false; reason: string } {
+  return { ok: false, reason };
+}
+
+function errorReason(error: unknown): string {
+  if (error instanceof Error) {
+    return error.message;
+  }
+  return String(error);
+}
+
+function normalizeDraftSnapshot(snapshot: DraftSnapshot): DraftSnapshot {
+  return {
+    ...snapshot,
+    canSubmit: snapshot.lines.length > 0 && snapshot.canSubmit,
+  };
+}
 
 export function createRestockWebMcpTools(): WebMCPToolDefinition[] {
   return [
@@ -30,9 +49,15 @@ export function createRestockWebMcpTools(): WebMCPToolDefinition[] {
       execute: async (args: Record<string, unknown>) => {
         const message = args.message;
         if (typeof message !== "string" || !message.trim()) {
-          throw new Error("message is required");
+          return toolError("message is required");
         }
-        return webMcpOrderActionsRef.current.resolveMessage(message);
+        try {
+          const snapshot =
+            await webMcpOrderActionsRef.current.resolveMessage(message);
+          return normalizeDraftSnapshot(snapshot);
+        } catch (error) {
+          return toolError(errorReason(error));
+        }
       },
     },
     {
@@ -88,12 +113,20 @@ export function createRestockWebMcpTools(): WebMCPToolDefinition[] {
         const lineId = args.lineId;
         const sku = args.sku;
         if (typeof lineId !== "string" || !lineId.trim()) {
-          throw new Error("lineId is required");
+          return toolError("lineId is required");
         }
         if (typeof sku !== "string" || !sku.trim()) {
-          throw new Error("sku is required");
+          return toolError("sku is required");
         }
-        return webMcpOrderActionsRef.current.pickOption(lineId, sku);
+        try {
+          const snapshot = await webMcpOrderActionsRef.current.pickOption(
+            lineId,
+            sku,
+          );
+          return normalizeDraftSnapshot(snapshot);
+        } catch (error) {
+          return toolError(errorReason(error));
+        }
       },
     },
     {
@@ -106,7 +139,8 @@ export function createRestockWebMcpTools(): WebMCPToolDefinition[] {
         additionalProperties: false,
       },
       annotations: { readOnlyHint: true },
-      execute: () => webMcpOrderActionsRef.current.getDraftSnapshot(),
+      execute: () =>
+        normalizeDraftSnapshot(webMcpOrderActionsRef.current.getDraftSnapshot()),
     },
     {
       name: "submit_order",
@@ -117,23 +151,29 @@ export function createRestockWebMcpTools(): WebMCPToolDefinition[] {
         properties: {},
         additionalProperties: false,
       },
+      annotations: {
+        readOnlyHint: false,
+        destructiveHint: false,
+        idempotentHint: false,
+      },
       execute: () => {
         const snapshot = webMcpOrderActionsRef.current.getDraftSnapshot();
         const currentLines = webMcpOrderActionsRef.current.lines;
 
         if (snapshot.lines.length === 0) {
-          throw new Error("Cannot submit: order draft is empty");
+          return toolError("Cannot submit: order draft is empty");
         }
 
         if (!canConfirm(currentLines)) {
           const pending = pendingClarificationCount(currentLines);
-          throw new Error(
+          return toolError(
             `Cannot submit: ${pending} line${pending === 1 ? "" : "s"} still need${pending === 1 ? "s" : ""} clarification`,
           );
         }
 
         webMcpOrderActionsRef.current.confirmOrder();
         return {
+          ok: true as const,
           confirmed: true,
           total: orderTotal(currentLines),
           lineCount: currentLines.filter(

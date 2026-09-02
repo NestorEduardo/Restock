@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useSyncExternalStore } from "react";
+import { useLayoutEffect, useSyncExternalStore } from "react";
 
 import { setWebMcpOrderActions } from "@/components/webmcp/actions-ref";
 import {
@@ -11,6 +11,12 @@ import { formatWebMcpStatusLine } from "@/components/webmcp/format-status";
 import { useOrderDraft } from "@/components/order/OrderDraftContext";
 
 export default function WebMCP() {
+  const mounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false,
+  );
+
   const {
     lines,
     resolveMessage,
@@ -19,7 +25,7 @@ export default function WebMCP() {
     getDraftSnapshot,
   } = useOrderDraft();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setWebMcpOrderActions({
       lines,
       resolveMessage,
@@ -34,6 +40,10 @@ export default function WebMCP() {
     getRestockWebmcpDiagnostics,
     getRestockWebmcpDiagnostics,
   );
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <p className="text-[10px] text-muted-foreground/60">

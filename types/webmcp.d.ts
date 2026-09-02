@@ -4,6 +4,8 @@ interface WebMCPToolDefinition {
   inputSchema: Record<string, unknown>;
   annotations?: {
     readOnlyHint?: boolean;
+    destructiveHint?: boolean;
+    idempotentHint?: boolean;
   };
   execute: (args: Record<string, unknown>) => unknown | Promise<unknown>;
 }
