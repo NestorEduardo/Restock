@@ -1,4 +1,5 @@
 import WebMCP from "@/components/WebMCP";
+import WebMcpBootstrap from "@/components/webmcp/WebMcpBootstrap";
 
 export default function PortalFooter() {
   return (
@@ -8,6 +9,7 @@ export default function PortalFooter() {
           Ordering powered by{" "}
           <span className="font-medium text-foreground">Restock</span>
         </p>
+        <WebMcpBootstrap />
         <WebMCP />
       </div>
     </footer>
